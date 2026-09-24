@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION = '1.2.0';
+const APP_VERSION = '1.3.0';
 const PROGRESS_KEY = 'qcm777-progress';
 const SESSION_KEY = 'qcm777-session';
 const LETTERS = ['A', 'B', 'C', 'D'];
@@ -128,12 +128,7 @@ function renderHome() {
 
     <div class="card">
       <h2 style="margin-top:0">Progression</h2>
-      <div class="row">
-        <button class="grow" data-act="export">Exporter</button>
-        <button class="grow" data-act="import">Importer</button>
-        <button class="grow danger" data-act="reset">Reset</button>
-      </div>
-      <input type="file" id="importFile" accept="application/json,.json" hidden>
+      <button class="danger" style="width:100%" data-act="reset">Reset</button>
     </div>
     <p class="footer">Version ${APP_VERSION} · ${total} questions</p>
   `;
@@ -305,8 +300,6 @@ app.addEventListener('click', e => {
       break;
     }
     case 'retry': startSeries('retry', shuffle(session.wrong)); break;
-    case 'export': exportProgress(); break;
-    case 'import': document.getElementById('importFile').click(); break;
     case 'reset':
       if (confirm('Tout remettre à zéro ?\nToutes les questions redeviennent neuves et les flags sont effacés.\n(L\'historique des séries est conservé.)')) {
         progress = { v: 1, done: {}, flags: {}, history: progress.history || [] };
@@ -324,56 +317,6 @@ app.addEventListener('keydown', e => {
   if (e.target.id === 'customN' && e.key === 'Enter') startNew(e.target.value);
 });
 
-app.addEventListener('change', e => {
-  if (e.target.id === 'importFile' && e.target.files[0]) importProgress(e.target.files[0]);
-});
-
-function exportProgress() {
-  const data = {
-    app: 'qcm777',
-    v: 1,
-    date: new Date().toISOString(),
-    done: Object.keys(progress.done).map(Number),
-    flags: Object.keys(progress.flags).map(Number),
-    history: progress.history || [],
-  };
-  const blob = new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' });
-  const name = `qcm777-progression-${data.date.slice(0, 10)}.json`;
-  const file = typeof File === 'function' ? new File([blob], name, { type: 'application/json' }) : null;
-  // iPhone: the share sheet lets you save to Files; elsewhere, plain download
-  if (file && navigator.canShare && navigator.canShare({ files: [file] }) && /iPhone|iPad|iPod/.test(navigator.userAgent)) {
-    navigator.share({ files: [file], title: name }).catch(() => {});
-    return;
-  }
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = name;
-  document.body.appendChild(a);
-  a.click();
-  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
-}
-
-function importProgress(file) {
-  const reader = new FileReader();
-  reader.onload = () => {
-    try {
-      const data = JSON.parse(reader.result);
-      if (data.app !== 'qcm777' || !Array.isArray(data.done) || !Array.isArray(data.flags)) throw new Error();
-      if (!confirm(`Importer cette progression ?\n${data.done.length} faites, ${data.flags.length} flaggées.\nLa progression actuelle sera remplacée.`)) return;
-      progress = { v: 1, done: {}, flags: {}, history: Array.isArray(data.history) ? data.history : [] };
-      data.done.forEach(id => { if (BY_ID[id]) progress.done[id] = 1; });
-      data.flags.forEach(id => { if (BY_ID[id]) progress.flags[id] = 1; });
-      session = null;
-      saveProgress();
-      saveSession();
-      renderHome();
-      toast('Progression importée');
-    } catch (e) {
-      toast('Fichier invalide');
-    }
-  };
-  reader.readAsText(file);
-}
 
 // ---------- boot ----------
 async function boot() {
