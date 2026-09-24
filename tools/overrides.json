@@ -1,4 +1,51 @@
 {
- "10": {"reponse": "B", "doute": "Pas de cercle : un « ? » et une flèche pointent vers B. Le corrigé (p.70) et la note donnent B."},
- "16": {"doute": "D est entouré mais l'annotateur a ajouté un « ? » dans la marge. Le corrigé donne aussi D."}
+ "10": {
+  "reponse": "B",
+  "doute": "Pas de cercle : un « ? » et une flèche pointent vers B. Le corrigé (p.70) et la note donnent B."
+ },
+ "16": {
+  "doute": "D est entouré mais l'annotateur a ajouté un « ? » dans la marge. Le corrigé donne aussi D."
+ },
+ "47": {
+  "reponse": "A"
+ },
+ "82": {
+  "doute": "D est entouré mais un « ? » et une flèche sont dans la marge. Le corrigé donne aussi D."
+ },
+ "113": {
+  "reponse": "C"
+ },
+ "117": {
+  "reponse": "B"
+ },
+ "128": {
+  "reponse": "C"
+ },
+ "144": {
+  "reponse": "A"
+ },
+ "147": {
+  "reponse": "A"
+ },
+ "152": {
+  "reponse": "C"
+ },
+ "175": {
+  "reponse": "C"
+ },
+ "182": {
+  "reponse": "C"
+ },
+ "189": {
+  "reponse": "C"
+ },
+ "322": {
+  "reponse": "B"
+ },
+ "341": {
+  "reponse": "C"
+ },
+ "334": {
+  "doute": "D est entouré en vert mais un « ? » est dans la marge. Le corrigé donne aussi D."
+ }
 }

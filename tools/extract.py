@@ -5,7 +5,7 @@ the handwritten ink annotations (circles), cross-checked against the answer key
 (pages 70-77) and the reviewer notes (pages 80-99).
 
 Usage: python3 tools/extract.py FIRST_PAGE LAST_PAGE   (PDF page numbers)
-Merges results into questions.json and writes tools/report.json.
+Merges results into app/questions.json and writes tools/report.json.
 """
 import json
 import re
@@ -87,6 +87,7 @@ def parse_page(page):
     for a in page.annots():
         if a.type[1] != "Ink":
             continue
+        green = a.colors["stroke"][1] > 0.9 and a.colors["stroke"][2] < 0.5
         for stroke in a.vertices:
             xs = [p[0] for p in stroke]; ys = [p[1] for p in stroke]
             w, h = max(xs) - min(xs), max(ys) - min(ys)
@@ -100,29 +101,51 @@ def parse_page(page):
                 L = min(q["labels"], key=lambda l: abs((l[1] + l[2]) / 2 - cy))
                 if abs((L[1] + L[2]) / 2 - cy) < 9:
                     q["ink"].append(L[0])
+                    if green:
+                        q.setdefault("green", []).append(L[0])
                     continue
             if cx < 64:
                 q["doubt"] += 1   # "?" or arrow in the left margin
             else:
                 q["marks"] += 1   # handwritten note in the text
+    tags = [(s[0][1], s[1].strip()) for s in spans(page)
+            if s[0][0] > 560 and re.fullmatch(r"\d+-\d+", s[1].strip())]
+    for q in qs:
+        q["tag"] = next((t for ty, t in tags if q["y"] <= ty < q["yend"]), None)
     return qs, []
 
 
 def main(first, last):
     doc = pymupdf.open(PDF)
     key, nts = answer_key(doc), notes(doc)
-    out_path = ROOT / "questions.json"
+    out_path = ROOT / "app" / "questions.json"
     existing = {q["id"]: q for q in json.loads(out_path.read_text())} if out_path.exists() else {}
     report = []
+    auto_path = ROOT / "tools" / "auto_doutes.json"
+    auto = {int(k): v for k, v in json.loads(auto_path.read_text()).items()} if auto_path.exists() else {}
     for pno in range(first, last + 1):
         page = doc[pno - 1]
         qs, _ = parse_page(page)
         for slot, q in enumerate(qs, 1):
-            tag = f"{pno}-{slot}"
+            tag = q["tag"] or f"{pno}-{slot}"
             ink = sorted(set(q["ink"]))
             k = key.get(q["num"])
             n = nts.get(tag)
             reponse = ink[0] if len(ink) == 1 else None
+            green = sorted(set(q.get("green", [])))
+            auto_doute = None
+            if len(ink) > 1 and len(green) == 1:
+                reponse = green[0]
+                others = ", ".join(l for l in ink if l != green[0])
+                auto_doute = (f"Deux cercles : {others} en bleu, {green[0]} en vert (correction). " +
+                              (f"Corrigé : {k}, note : {n}. Vert retenu." if green[0] == k else
+                               f"⚠ Le corrigé et la note donnent {k}. Vert retenu."))
+            elif ink and reponse and reponse != k:
+                auto_doute = (f"{reponse} est entouré, mais le corrigé et la note donnent {k}. "
+                              f"Réponse entourée retenue.")
+            auto.pop(q["num"], None)
+            if auto_doute:
+                auto[q["num"]] = auto_doute
             existing[q["num"]] = {
                 "id": q["num"],
                 "question": q["question"],
@@ -135,7 +158,10 @@ def main(first, last):
                            "nchoix": len(q["choix"]), "marks": q["marks"], "doubt": q["doubt"],
                            "ok": len(ink) == 1 and ink[0] == k == n and all(q["choix"])
                            and q["question"] and not q["marks"] and not q["doubt"]})
-    ov = json.loads((ROOT / "tools" / "overrides.json").read_text())
+    auto_path.write_text(json.dumps(auto, ensure_ascii=False, indent=1))
+    ov = {str(k): {"doute": v} for k, v in auto.items()}
+    for sid, o in json.loads((ROOT / "tools" / "overrides.json").read_text()).items():
+        ov.setdefault(sid, {}).update(o)
     for sid, o in ov.items():
         q = existing.get(int(sid))
         if q:
@@ -148,12 +174,22 @@ def main(first, last):
     old = json.loads(rep.read_text()) if rep.exists() else []
     ids = {r["id"] for r in report}
     rep.write_text(json.dumps(sorted([r for r in old if r["id"] not in ids] + report, key=lambda r: r["id"]), indent=1))
-    md = ["# Doutes", "", "Questions dont la réponse entourée n'est pas claire (vérifier dans le PDF).", "",
-          "| Question | Page PDF | Réponse retenue | Détail |", "|---|---|---|---|"]
+    groups = {"conflit": [], "marque": [], "vert": []}
     for sid, o in sorted(ov.items(), key=lambda kv: int(kv[0])):
         if "doute" in o and int(sid) in existing:
             q = existing[int(sid)]
-            md.append(f"| {sid} | {q['page']} | {q['reponse']} | {o['doute']} |")
+            d = o["doute"]
+            g = "conflit" if ("⚠" in d or "mais le corrigé" in d) else "marque" if "?" in d or "Pas de cercle" in d else "vert"
+            groups[g].append(f"| {sid} | {q['page']} | **{q['reponse']}** | {d} |")
+    head = ["| Question | Page PDF | Réponse retenue | Détail |", "|---|---|---|---|"]
+    md = ["# Doutes", "",
+          "Règle : la réponse entourée est retenue. Quand il y a deux cercles, le vert (correction) est retenu.",
+          "Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (p. 80-99).", "",
+          f"## 1. Cercle différent du corrigé officiel ({len(groups['conflit'])}) — à vérifier en priorité", ""]
+    md += head + groups["conflit"]
+    md += ["", f"## 2. « ? » ou absence de cercle ({len(groups['marque'])})", ""] + head + groups["marque"]
+    md += ["", f"## 3. Deux cercles, bleu et vert ({len(groups['vert'])}) — vert retenu, identique au corrigé", ""]
+    md += head + groups["vert"]
     (ROOT / "doutes.md").write_text("\n".join(md) + "\n")
     missing = [q["id"] for q in data if not q["reponse"]]
     if missing:

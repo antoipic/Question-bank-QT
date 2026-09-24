@@ -1,0 +1,4420 @@
+[
+ {
+  "id": 1,
+  "question": "How, are the busses powered if the right engine is started with APU powering the Left bus system and External Power powering the right bus system ?",
+  "choix": [
+   "External power continues to supply the right main bus.",
+   "The right engine generator automatically powers the right main bus.",
+   "The right engine generator automatically powers both main busses."
+  ],
+  "reponse": "B",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 2,
+  "question": "What powers the left main bus if the left engine is shut-down, the right engine generator is running the APU generator is not running ?",
+  "choix": [
+   "Secondary External Power supplies the left main bus.",
+   "The APU generator powers the left main bus.",
+   "The right engine generator powers the left main bus."
+  ],
+  "reponse": "C",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 3,
+  "question": "Which items below are de-powered if you position the Battery switch to OFF during power down ? GPU, APU, GTR already OFF.",
+  "choix": [
+   "The APU Battery and Hot Battery Bus.",
+   "The Engine Fire Extinguisher Bottles and APU Fire Extinguisher Bottles.",
+   "The Standby bus, Captain's displays, and Left AIMS."
+  ],
+  "reponse": "C",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 4,
+  "question": "How can you power the Ground Handling Bus before shutdown if no external power is available ?",
+  "choix": [
+   "Select the ground handling Bus ON.",
+   "The bus is powered as long as the Right Main Bus is powered.",
+   "Start the APU."
+  ],
+  "reponse": "C",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 5,
+  "question": "Which bus operates only on the ground ?",
+  "choix": [
+   "The Ground Service Bus.",
+   "The Ground Handling, Bus.",
+   "The Left Main AC Bus.",
+   "The Right Transfer Bus."
+  ],
+  "reponse": "B",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 6,
+  "question": "What provides DC power on this airplane ?",
+  "choix": [
+   "DC Generators.",
+   "Standby Inverters.",
+   "PMG back up generators.",
+   "Transformer Rectifier Units."
+  ],
+  "reponse": "D",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 7,
+  "question": "What is the electrical configuration during Autoland ?",
+  "choix": [
+   "There is no change from normal.",
+   "The Left Transfer Bus isolates from the Right Main Bus.",
+   "The busses isolate to allow three independant sources to power the three AP.",
+   "The Left Transfer Bus isolates from the Right Transfer Bus."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 8,
+  "question": "What is the primary power source for Fly-by-Wire ?",
+  "choix": [
+   "Battery.",
+   "Main AC Busses.",
+   "Permanent Magnet Generators.",
+   "APU."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 9,
+  "question": "What is the secondary source of power for Fly-by-Wire if one or more PMG are unpowered ?",
+  "choix": [
+   "Hot Battery Bus.",
+   "Left Transfer Bus.",
+   "DC Busses.",
+   "Main AC Busses."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 10,
+  "question": "In first time what is the primary source of Standby Power if all normal sources fail ?",
+  "choix": [
+   "APU.",
+   "Main Battery.",
+   "Back-up generators.",
+   "RAT generator."
+  ],
+  "reponse": "B",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 11,
+  "question": "What is the source of Stand-by electrical power if the RAT sheds electrical power because of low hydraulic pressure ?",
+  "choix": [
+   "APU.",
+   "Back-up generators.",
+   "Main Battery.",
+   "DC Busses."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 12,
+  "question": "What does the \" ELEC GEN DRIVE R \" advisory message indicate ?",
+  "choix": [
+   "The drive has disconnected automatically because of high oil temperature.",
+   "The drive has disconnected automatically because of low oil pressure.",
+   "There is low oil pressure in the drive. Disconnect the drive manually.",
+   "There is high oil temperature in the drive. Disconnect the drive manually."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 13,
+  "question": "What is the primary source for the Transfer busses ?",
+  "choix": [
+   "Ram Air turbine.",
+   "Back-up generators.",
+   "Engine generators.",
+   "Main DC Busses."
+  ],
+  "reponse": "C",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 14,
+  "question": "What is the correct Electrical Panel configuration for normal flight ?",
+  "choix": [
+   "Bus Tie Switches in ISLN, Battery Switch ON, Generator Control Switches ON.",
+   "Bus Tie Switches in AUTO, Battery Switch OFF, Generator Control Switches ON.",
+   "Bus Tie Switches in AUTO, Battery Switch ON, Generator Control Switches ON.",
+   "Bus Tie Switches in AUTO, Battery Switch ON, Generator Control Switches OFF."
+  ],
+  "reponse": "C",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 15,
+  "question": "What does the External Power AVAIL light indicate ?",
+  "choix": [
+   "External power is disconnected from the airplane.",
+   "External power is connected to all the airplane's electrical busses.",
+   "External power is available to the electrical busses but may not be correct.",
+   "External Power is connected to the airplane, correct and ready to power the electrical busses."
+  ],
+  "reponse": "D",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 16,
+  "question": "One back up generators is automatically connected when :",
+  "choix": [
+   "Autoland.",
+   "Only one IDG operating (including APU).",
+   "1 or 2 AC Main Bus lost.",
+   "All answers are true."
+  ],
+  "reponse": "D",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 17,
+  "question": "What automatic switching will occur if you start the APU with External Power on the Tie Bus system ?",
+  "choix": [
+   "The APU connects to the Bus Tie switches but does not power either Main Bus.",
+   "The APU connects to the Tie Bus and replaces Secondary External Power on the Left Main Bus.",
+   "The APU connects to the Tie Bus and replaces Primary External Power."
+  ],
+  "reponse": "B",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 18,
+  "question": "What does the \" APU SHUTDOWN \" advisory message mean ?",
+  "choix": [
+   "The APU is out of fuel.",
+   "The APU has been manually shut down.",
+   "The APU has automatically shut down.",
+   "The APU controller has shut down the packs."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 19,
+  "question": "What does the \" APU LIMIT \" caution message mean ?",
+  "choix": [
+   "The APU is out of fuel.",
+   "An APU limit has been exceeded.",
+   "The APU has automatically shut down.",
+   "The APU pneumatic output is limited."
+  ],
+  "reponse": "B",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 20,
+  "question": "What thrust reference mode provides maximum rated take-off thrust ?",
+  "choix": [
+   "TOI.",
+   "D -TO 1.",
+   "TO.",
+   "D -TO."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 21,
+  "question": "What thrust reference mode provides an assumed temperature derated take-off thrust ?",
+  "choix": [
+   "TOI.",
+   "D -TO.",
+   "TO.",
+   "D -TO 1."
+  ],
+  "reponse": "B",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 22,
+  "question": "During climb with normal engine EEC modes configured you can manually position the Thrust Levers to the full forward position. What will happen ?",
+  "choix": [
+   "The engines will exceed the maximum thrust limit.",
+   "The engines will produce maximum climb thrust.",
+   "The engines will produce maximum rated thrust.",
+   "The EEC alternate mode will automatically engage."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 23,
+  "question": "During, cruise with normal engine EEC modes configured, you manually set the Thrust Levers to the full forward position. What will happen ?",
+  "choix": [
+   "The engines will exceed the maximum thrust limit.",
+   "The engines will produce maximum cruise thrust.",
+   "The engines will produce maximum rated thrust.",
+   "The EEC alternate mode will automatically engage."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 24,
+  "question": "Which statement is true concerning the alternate EEC mode ?",
+  "choix": [
+   "If a fault occurs in the normal mode, control is automatically transferred to the soft alternate mode.",
+   "In the hard alternate mode, the EEC uses N2 as the controlling parameter.",
+   "Engine thrust limit protection is provided in both the normal and hard alternate modes.",
+   "Overspeed protection is not available in the hard alternate mode."
+  ],
+  "reponse": "A",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 25,
+  "question": "With the ENGINE EEC's manually selected to alternate, what statement is true ?",
+  "choix": [
+   "The autothrottles automatically disengage.",
+   "Positioning the thrust levers to the full forward position will cause an engine limit to be exceeded.",
+   "Both engine EEC's are now in the soft alternate mode.",
+   "The EEC schedules N2 as a function of thrust lever position."
+  ],
+  "reponse": "B",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 26,
+  "question": "What does the \" ENG OIL PRESS R \" caution message mean ?",
+  "choix": [
+   "Engine oil pressure is low.",
+   "Engine oil pressure is high.",
+   "Engine oil temperature is low.",
+   "Engine oil temperature is high."
+  ],
+  "reponse": "A",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 27,
+  "question": "What does the \" ENG OIL TEMP L \" advisory message mean ?",
+  "choix": [
+   "Engine oil pressure is low.",
+   "Engine oil pressure is high.",
+   "Engine oil temperature is low.",
+   "Engine oil temperature is high."
+  ],
+  "reponse": "D",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 28,
+  "question": "What does the \" ENG FUEL VALVE L \" advisory message mean ?",
+  "choix": [
+   "The engine fuel valve on the left engine is closed.",
+   "The spar or engine fuel valve on the left engine has not reached it's commanded position.",
+   "Both the spar and the engine fuel valves on the left engine are commanded to the same position.",
+   "The fuel/oil heat exchanger valve is not functioning."
+  ],
+  "reponse": "B",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 29,
+  "question": "With Autostart ON, when do you move the FUEL CONTROL switch to RUN ?",
+  "choix": [
+   "After START has been selected on the START/IGNITION selector.",
+   "After reaching maximum motoring speed.",
+   "After the engine stabilizes at idle.",
+   "After 18% N2 has been reached."
+  ],
+  "reponse": "A",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 30,
+  "question": "When does automatic continuous ignition activate ?",
+  "choix": [
+   "When flaps are out of the UP position or engine anti-ice is on.",
+   "When the landing gear is down.",
+   "When thunderstorms are detected on the weather radar.",
+   "When the thrust levers reach idle or the landing gear is down."
+  ],
+  "reponse": "A",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 31,
+  "question": "What powers the left engine thrust reverser ?",
+  "choix": [
+   "Left hydraulic system.",
+   "Center hydraulic system.",
+   "Left engine bleed air.",
+   "Right engine bleed air."
+  ],
+  "reponse": "A",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 32,
+  "question": "What powers the right engine thrust reverser ?",
+  "choix": [
+   "Left engine bleed air.",
+   "Right engine bleed air.",
+   "Center hydraulic system.",
+   "Right hydraulic system."
+  ],
+  "reponse": "D",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 33,
+  "question": "What does the \" ENG REV LIMITED L \" advisory message mean ?",
+  "choix": [
+   "The left engine reverser is limited to 1 hydraulic source.",
+   "Engine reverse thrust is limited to the left engine.",
+   "The left engine reverser will not deploy or will be limited to idle.",
+   "The left engine reverse thrust is limited to ground operation only."
+  ],
+  "reponse": "C",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 34,
+  "question": "Where is engine oil quantity displayed ?",
+  "choix": [
+   "The status page.",
+   "The primary engine indications.",
+   "The secondary engine indications.",
+   "There is no flight deck display for engine oil quantity."
+  ],
+  "reponse": "C",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 35,
+  "question": "When does the EEC select approach idle ?",
+  "choix": [
+   "When the flaps are out of the UP position.",
+   "When the flaps are commanded to 25 or greater.",
+   "When the engine bleed air valve is open.",
+   "When wing anti-ice is ON."
+  ],
+  "reponse": "B",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 36,
+  "question": "If the APU is in the attended mode, what fault causes an immediate automatic shutdown ?",
+  "choix": [
+   "APU controller failure.",
+   "High EGT.",
+   "Low oil pressure.",
+   "High oil temperature."
+  ],
+  "reponse": "A",
+  "page": 13,
+  "image": null
+ },
+ {
+  "id": 37,
+  "question": "What malfunction, during ground start, will cause the autostart system to abort the start ?",
+  "choix": [
+   "Low oil pressure.",
+   "High oil temperature.",
+   "Broken fan blade.",
+   "Hot start."
+  ],
+  "reponse": "D",
+  "page": 14,
+  "image": null
+ },
+ {
+  "id": 38,
+  "question": "What is auto-relight ?",
+  "choix": [
+   "Auto-relight provides flame out protection by activating the autostart system.",
+   "Auto-relight provides flame out protection by activating both igniters.",
+   "Auto-relight opens the start valve automatically if the engine fails to start.",
+   "Auto-relight provides hung start protection by deactivating the igniter."
+  ],
+  "reponse": "B",
+  "page": 14,
+  "image": null
+ },
+ {
+  "id": 39,
+  "question": "During engine start on ground, EICAS message APU LIM Caution appears. APU automatically shuts down.",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "B",
+  "page": 14,
+  "image": null
+ },
+ {
+  "id": 40,
+  "question": "After an engine EGT overlimit, can you erase red boxed EGT indicator ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "A",
+  "page": 14,
+  "image": null
+ },
+ {
+  "id": 41,
+  "question": "In flight, what happens when both AC transfer busses are lost with APU selector on OFF position ?",
+  "choix": [
+   "Nothing.",
+   "APU starts automatically."
+  ],
+  "reponse": "B",
+  "page": 14,
+  "image": null
+ },
+ {
+  "id": 42,
+  "question": "During engine restart in flight, does autostart protect from hot start ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "B",
+  "page": 14,
+  "image": null
+ },
+ {
+  "id": 43,
+  "question": "During preflight you notice the BOTTLE DISCH APU advisory message displayed on EICAS, what does this mean ?",
+  "choix": [
+   "This is a normal indication prior to APU start.",
+   "The APU fire bottle pressure is low.",
+   "The APU fire bottle squibs are inoperative."
+  ],
+  "reponse": "B",
+  "page": 15,
+  "image": null
+ },
+ {
+  "id": 44,
+  "question": "During preflight you notice the BOTTLE 1 DISCH ENG advisory message displayed on EICAS, what does this mean ?",
+  "choix": [
+   "Ground maintenance is servicing fire bottle 1.",
+   "The fire bottle squibs are inoperative.",
+   "This is a normal indication prior to APU start.",
+   "Fire bottle 1 has discharged."
+  ],
+  "reponse": "D",
+  "page": 15,
+  "image": null
+ },
+ {
+  "id": 45,
+  "question": "During cruise you notice the \" OVERHEAT ENG R \" Caution message displayed on EICAS, what has occurred ?",
+  "choix": [
+   "An overheat condition in the right engine.",
+   "A fire condition exists in the right engine.",
+   "Overheat detection in the right engine has failed.",
+   "A pending overheat condition exists in the right engine."
+  ],
+  "reponse": "A",
+  "page": 15,
+  "image": null
+ },
+ {
+  "id": 46,
+  "question": "What happens when an APU fire is detected on the ground and the engines are running ?",
+  "choix": [
+   "The APU shuts down automatically and the fire bottle discharges automatically.",
+   "The APU shuts down automatically but the fire bottle must be discharged manually.",
+   "The APU does not shut down automatically but the fire bottle discharges automatically.",
+   "The APU does not shut down automatically and the fire bottle must be discharged manually."
+  ],
+  "reponse": "B",
+  "page": 15,
+  "image": null
+ },
+ {
+  "id": 47,
+  "question": "What happens when an APU fire is detected on ground and the engines are shutdown ?",
+  "choix": [
+   "The APU shuts down automatically and the fire bottle discharges automatically.",
+   "The APU shuts down automatically but the fire bottle must be discharged manually.",
+   "The APU does not shut down automatically but the fire bottle discharges automatically.",
+   "The APU does not shut down automatically and the fire bottle must be discharged manually."
+  ],
+  "reponse": "A",
+  "page": 15,
+  "image": null
+ },
+ {
+  "id": 48,
+  "question": "What does the \" DET FIRE ENG R \" advisory message indicate ?",
+  "choix": [
+   "Fire detection for this engine is no longer available.",
+   "The fire detection system for this engine has automatically reconfigured to single loop operation.",
+   "The right engine fire bottle squibs are inoperative.",
+   "A fire has been detected in the right engine."
+  ],
+  "reponse": "A",
+  "page": 16,
+  "image": null
+ },
+ {
+  "id": 49,
+  "question": "What does the \" DET FIRE APU \" advisory message indicate ?",
+  "choix": [
+   "The APU fire detection system has automatically reconfigured to single loop operation.",
+   "APU fire detection is no longer available.",
+   "The APU fire bottle squibs are inoperative.",
+   "A fire has been detected in the APU."
+  ],
+  "reponse": "B",
+  "page": 16,
+  "image": null
+ },
+ {
+  "id": 50,
+  "question": "After the FWD CARGO FIRE ARM switch has been armed, what happens when the CARGO FIRE DISCH switch is pushed ?",
+  "choix": [
+   "Two rapid dump bottles discharge into the forward cargo compartment.",
+   "All 5 fire bottles arm and airflow around the cargo compartment is reduced.",
+   "All 5 bottles discharge into the forward cargo compartment.",
+   "One of the metered bottles discharges into the forward cargo compartment."
+  ],
+  "reponse": "A",
+  "page": 16,
+  "image": null
+ },
+ {
+  "id": 51,
+  "question": "After a forward cargo fire has been extinguished, what happens when the AFT CARGO FIRE ARM switch is now pushed ?",
+  "choix": [
+   "The arming functions for the AFT CARGO FIRE ARM switch activate and the metered bottles discharge into the aft compartment.",
+   "The arming functions for the AFT CARGO FIRE ARM switch do NOT activate.",
+   "The arming functions for the AFT CARGO FIRE ARM switch activate, but discharge into the aft compartment does not occur."
+  ],
+  "reponse": "C",
+  "page": 16,
+  "image": null
+ },
+ {
+  "id": 52,
+  "question": "What statement is true concerning a wheel well fire ?",
+  "choix": [
+   "Two fire bottles protect the wheel well from fires.",
+   "Fire detection loops alert the crew to excessive brake temperatures.",
+   "Fires are detected by two smoke detection units in the wheel well.",
+   "There is no built in fire extinguishing system for the wheel well."
+  ],
+  "reponse": "D",
+  "page": 16,
+  "image": null
+ },
+ {
+  "id": 53,
+  "question": "Which statement is true concerning, a lavatory smoke ?",
+  "choix": [
+   "An EICAS Caution message SMOKE LAVATORY is shown.",
+   "An aural warning inside the lavatory and light outside the lavatory are the only smoke warnings.",
+   "There is no built in fire extinguishing system for the lavatories."
+  ],
+  "reponse": "A",
+  "page": 16,
+  "image": null
+ },
+ {
+  "id": 54,
+  "question": "What does the \" DET FIRE CARGO AFT \" advisory message indicate ?",
+  "choix": [
+   "A fire has been detected in the aft cargo compartment.",
+   "There is a detection zone fault in the smoke detector for the aft cargo compartment.",
+   "The aft cargo fire heat sensor is inoperative.",
+   "Fire detection for the aft cargo compartment is not available."
+  ],
+  "reponse": "D",
+  "page": 17,
+  "image": null
+ },
+ {
+  "id": 55,
+  "question": "ENG fire switches are unlocked when fuel control switches are OFF.",
+  "choix": [
+   "True.",
+   "False."
+  ],
+  "reponse": "A",
+  "page": 17,
+  "image": null
+ },
+ {
+  "id": 56,
+  "question": "During take-off, when an ENG FIRE occurs :",
+  "choix": [
+   "Fire bell sounds at any time.",
+   "Fire bell sounds between V1 and 400 ft (or 25 sec after V1).",
+   "Fire bell is inhibited between V1 and 400 ft (or 25 sec after V1)."
+  ],
+  "reponse": "C",
+  "page": 17,
+  "image": null
+ },
+ {
+  "id": 57,
+  "question": "In case of a fire occuring in the main deck cargo compartment :",
+  "choix": [
+   "2 bottles are immediatly discharged and the 5 remaining bottles discharge after a time delay.",
+   "There is no fire extinguisher and the airplane has to be depressurized."
+  ],
+  "reponse": "B",
+  "page": 17,
+  "image": null
+ },
+ {
+  "id": 58,
+  "question": "Which of the items listed below is NOT determined by the Fuel Quantity Indicating System ?",
+  "choix": [
+   "Fuel Temperature.",
+   "Fuel height.",
+   "Fuel Type.",
+   "Fuel density."
+  ],
+  "reponse": "C",
+  "page": 18,
+  "image": null
+ },
+ {
+  "id": 59,
+  "question": "On B777-200ER one main fuel tank capacity is :",
+  "choix": [
+   "29 tons.",
+   "29 000 liters.",
+   "46 tons.",
+   "46 000 liters."
+  ],
+  "reponse": "A",
+  "page": 18,
+  "image": null
+ },
+ {
+  "id": 60,
+  "question": "With no AC power available, what supplies fuel to operate the APU ?",
+  "choix": [
+   "The APU cannot operate.",
+   "The APU is fed by a DC pump in the left main tank.",
+   "The APU operates by suction feed.",
+   "The APU is fed by a DC pump in the center tank."
+  ],
+  "reponse": "B",
+  "page": 18,
+  "image": null
+ },
+ {
+  "id": 61,
+  "question": "Fuel balancing :",
+  "choix": [
+   "Is forbidden during Approach and Go Around.",
+   "Is forbidden with only one engine operating.",
+   "May be done on any phase of flight.",
+   "Is inoperative with only one engine operating."
+  ],
+  "reponse": "C",
+  "page": 18,
+  "image": null
+ },
+ {
+  "id": 62,
+  "question": "Fuel JETTISON :",
+  "choix": [
+   "At least 2 tons of fuel remain on board after Jettison is complete.",
+   "The Jettison system automatically calculates the fuel to remain quantity.",
+   "Crew cannot choose fuel to remain quantity.",
+   "No fuel Jettison C/L on B 777."
+  ],
+  "reponse": "B",
+  "page": 18,
+  "image": null
+ },
+ {
+  "id": 63,
+  "question": "Each fuel pump in right Main fuel tank :",
+  "choix": [
+   "Is DC powered.",
+   "Is AC powered.",
+   "Is DC HOT Bus powered."
+  ],
+  "reponse": "B",
+  "page": 18,
+  "image": null
+ },
+ {
+  "id": 64,
+  "question": "The Center tank pumps override the Main tank pumps :",
+  "choix": [
+   "Because they have higher output pressure.",
+   "Because electrical priority is given by a computer.",
+   "Because each Main tank has only one pump."
+  ],
+  "reponse": "A",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 65,
+  "question": "Left Main tank is equipped with :",
+  "choix": [
+   "1 AC pump and 1 DC pump.",
+   "3 AC pumps.",
+   "2 AC pumps and 1 DC pump."
+  ],
+  "reponse": "C",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 66,
+  "question": "A scavenge system transfers remaining center tank fuel to the Main tanks when :",
+  "choix": [
+   "Center tank quantity is less than 1300 kg.",
+   "Either Main tank quantity is less than 13 100 kg.",
+   "EICAS message FUEL LOW CENTER is displayed."
+  ],
+  "reponse": "C",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 67,
+  "question": "APU is supplied from :",
+  "choix": [
+   "Right fuel manifold.",
+   "Left fuel manifold.",
+   "A specific fuel line from Center tank."
+  ],
+  "reponse": "B",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 68,
+  "question": "EICAS message FUEL CROSSFEED FWD (advisory) appears in case of :",
+  "choix": [
+   "Opening of FWD Crossfeed valve.",
+   "FWD Crossfeed valve not in commanded position.",
+   "Closing of AFT Crossfeed valve and opening of FWD Crossfeed valve."
+  ],
+  "reponse": "B",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 69,
+  "question": "In flight, after complete jettison, the remaining fuel quantity is :",
+  "choix": [
+   "At least 5200 kg in each Main tank.",
+   "At least 5200 kg distributed between two Main tanks.",
+   "At least 13 100 kg distributed between two Main tanks."
+  ],
+  "reponse": "A",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 70,
+  "question": "In flight, the sequence of jettison tanks :",
+  "choix": [
+   "Is always the same : Center tank then Main tanks.",
+   "Depends on Center of Gravity.",
+   "Is always the same : Main tanks then Center tank."
+  ],
+  "reponse": "B",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 71,
+  "question": "EICAS message FUEL AUTO JETTISON (Caution) may indicate that :",
+  "choix": [
+   "Fuel jettison is performed.",
+   "Fuel jettison is finished.",
+   "Fuel jettison automatic shutoff has failed."
+  ],
+  "reponse": "C",
+  "page": 19,
+  "image": null
+ },
+ {
+  "id": 72,
+  "question": "EICAS message FUEL IN CENTER (advisory) indicates that :",
+  "choix": [
+   "Both Center tank pumps switches are OFF, with fuel in the Center tank (more than 1360 kg) .",
+   "Both Center tank pumps switches are ON, with no fuel in the Center tank.",
+   "Some fuel remains in Center tank."
+  ],
+  "reponse": "A",
+  "page": 20,
+  "image": null
+ },
+ {
+  "id": 73,
+  "question": "EICAS message FUEL JETTISON SYSTEM (Caution) may indicate that :",
+  "choix": [
+   "Fuel jettison is in progress.",
+   "Fuel jettisson is complete.",
+   "Fuel jettison system is inoperative."
+  ],
+  "reponse": "C",
+  "page": 20,
+  "image": null
+ },
+ {
+  "id": 74,
+  "question": "Which of these flight control surfaces droop when the trailing edge flaps extend ?",
+  "choix": [
+   "Flaperons.",
+   "Slats only.",
+   "Kruger Flaps and Slats.",
+   "Flaperons and Slats."
+  ],
+  "reponse": "D",
+  "page": 21,
+  "image": null
+ },
+ {
+  "id": 75,
+  "question": "Which of these flight control surfaces aid in roll control ?",
+  "choix": [
+   "Ailerons, Flaperons and Spoilers.",
+   "Slats and Spoilers only.",
+   "Kruger Flaps, Slats and Spoilers.",
+   "Flaperons and Slats."
+  ],
+  "reponse": "A",
+  "page": 21,
+  "image": null
+ },
+ {
+  "id": 76,
+  "question": "In Direct Mode, which of the following components of Fly-by-Wire are not operating ?",
+  "choix": [
+   "Primary Flight Computers.",
+   "Actuator Control Electronics (ACES).",
+   "Power Control Units (PCUS).",
+   "Position Feedback Tranducers."
+  ],
+  "reponse": "A",
+  "page": 21,
+  "image": null
+ },
+ {
+  "id": 77,
+  "question": "What does Stall Warning consist of ?",
+  "choix": [
+   "Stick Shaker followed by Stall Warning.",
+   "Stick Shaker but no Stall Warning.",
+   "EICAS Message \" STALL \".",
+   "Stall Warning Horn."
+  ],
+  "reponse": "B",
+  "page": 21,
+  "image": null
+ },
+ {
+  "id": 78,
+  "question": "Which of the following are not Stall Protection features ?",
+  "choix": [
+   "The autothrottle advances to maintain minimum airspeed.",
+   "The autothrottle disconnects.",
+   "In landing configuration, leading edge slats move to gapped position.",
+   "Stick Shaker activates."
+  ],
+  "reponse": "B",
+  "page": 21,
+  "image": null
+ },
+ {
+  "id": 79,
+  "question": "What is true about Turn Compensation ?",
+  "choix": [
+   "It is available only in the Secondary mode.",
+   "It is not available if the bank angle is above 30 degrees.",
+   "Elevator input is not required if the airplane is in a 30 degree bank.",
+   "The Turn compensation switch is on the overhead panel."
+  ],
+  "reponse": "B",
+  "page": 21,
+  "image": null
+ },
+ {
+  "id": 80,
+  "question": "What could cause the \" STAB GREENBAND \" advisory message to be displayed ?",
+  "choix": [
+   "Power to the stabilizer position Indicator is lost.",
+   "The Stabilizer Position Indicator is unreliable.",
+   "Nose gear pressure switch disagrees with computed stabilizer greenband."
+  ],
+  "reponse": "C",
+  "page": 22,
+  "image": null
+ },
+ {
+  "id": 81,
+  "question": "Auto speedbrakes extention is provided for which phases of flight ?",
+  "choix": [
+   "Takeoff, Rejected Takeoff, Approach.",
+   "Rejected Takeoff, Landing.",
+   "Takeoff, Rejected Takeoff, Approach below 200 feet.",
+   "Rejected Takeoff, Approach, Landing."
+  ],
+  "reponse": "B",
+  "page": 22,
+  "image": null
+ },
+ {
+  "id": 82,
+  "question": "Which of one of the following statements is false ?",
+  "choix": [
+   "At cruise speed spoilers 5 and 10 are locked out.",
+   "Spoilers 4 and 11 are mechanically operated.",
+   "When augmenting roll control, the spoilers work asymmetrically.",
+   "There are 12 spoilers."
+  ],
+  "reponse": "D",
+  "page": 22,
+  "image": null
+ },
+ {
+  "id": 83,
+  "question": "Under what conditions does the \" SPEEDBRAKE EXTENDED \" caution message display ?",
+  "choix": [
+   "Speedbrakes are extended, and the airplane is above 800 feet RA.",
+   "Speedbrakes are extended when RA is between 15 and 800 feet, or when the flap lever is in landing position or when either thrust lever is not closed.",
+   "Any time speedbrakes are extended.",
+   "After landing, if speedbrakes fail to extend."
+  ],
+  "reponse": "B",
+  "page": 22,
+  "image": null
+ },
+ {
+  "id": 84,
+  "question": "Which are characteristics of Bank Angle protection ?",
+  "choix": [
+   "Bank Angle Protection provides opposing wheel forces to roll inputs at excessive bank angles.",
+   "The bank angle indicator on the PFD changes to magenta at angles greater than 35 degrees.",
+   "Bank Angle Protection begins at 45 degrees at cruise airspeeds.",
+   "Bank angle Protection functions only during autopilot operation."
+  ],
+  "reponse": "A",
+  "page": 22,
+  "image": null
+ },
+ {
+  "id": 85,
+  "question": "Which statements are true regarding the Flap Position Indicator ?",
+  "choix": [
+   "The Flap Position Indicator is on the PFD.",
+   "The Flap Position Indicator appears on EICAS when slats begin to extend.",
+   "There are three different displays Primary, Secondary and Alternate.",
+   "The Flap Position Indicator appears on EICAS when slats begin to extend and there are three different displays Primary, Secondary and Alternate"
+  ],
+  "reponse": "D",
+  "page": 22,
+  "image": null
+ },
+ {
+  "id": 86,
+  "question": "Which statements are true about Flap Load Relief ?",
+  "choix": [
+   "Flap Load Relief operates if flap airspeed limits are exceeded only with the flap lever in the 25 to 30 position.",
+   "Flap Load Relief operates if flap airspeed limits are exceeded with the flap lever in the 05 to 30 position.",
+   "Flap load relief is available in the primary and secondary mode.",
+   "Flap Load Relief operates if flap airspeed limits are exceeded with the flap lever in the 15 to 30 position and Flap load relief is only available in the primary mode."
+  ],
+  "reponse": "D",
+  "page": 23,
+  "image": null
+ },
+ {
+  "id": 87,
+  "question": "Which are characteristics of Secondary Mode of flap and slat operation ?",
+  "choix": [
+   "Operation is electrical.",
+   "There is no Auto-slat function.",
+   "There is an expanded Flap Position indicator.",
+   "All answers are true."
+  ],
+  "reponse": "D",
+  "page": 23,
+  "image": null
+ },
+ {
+  "id": 88,
+  "question": "What can you say about the \" FLAPS DRIVE \" caution message ?",
+  "choix": [
+   "The message is displayed when the Flap Drive mechanism has failed.",
+   "The flaps cannot be repositioned.",
+   "Do not arm the Alternate system.",
+   "All answers are true"
+  ],
+  "reponse": "D",
+  "page": 23,
+  "image": null
+ },
+ {
+  "id": 89,
+  "question": "What can you say about the \" FLAPS DRIVE \" caution message ?",
+  "choix": [
+   "The message is displayed when the Flap Drive mechanism has been used.",
+   "The EICAS flap indicator display, turns amber.",
+   "The flaps will operate in Secondary Mode only.",
+   "The message is displayed when the Flap Drive mechanism has been shut down due to an asymmetry and the EICAS flap indicator display, turns amber"
+  ],
+  "reponse": "D",
+  "page": 23,
+  "image": null
+ },
+ {
+  "id": 90,
+  "question": "Which Trim control(s) is inhibited when the AP are engaged ?",
+  "choix": [
+   "Manual Trim Selectors.",
+   "Control Wheel Pitch Trim switches.",
+   "Both of the above.",
+   "None of the above."
+  ],
+  "reponse": "B",
+  "page": 23,
+  "image": null
+ },
+ {
+  "id": 91,
+  "question": "Which Statements are true concerning the Primary Flight Computer Disconnect switch in DISC ?",
+  "choix": [
+   "Protection features are Not available.",
+   "The system operates in direct mode.",
+   "AP is not available.",
+   "All of the above."
+  ],
+  "reponse": "D",
+  "page": 23,
+  "image": null
+ },
+ {
+  "id": 92,
+  "question": "What is wheel to rudder cross-tie ?",
+  "choix": [
+   "Ability to dampen Dutch roll with control wheel only.",
+   "Ability to control initial effects of an engine failure with control wheel only.",
+   "Ability to control rudder trim with control wheel inputs.",
+   "Ability to override rudder inputs with the control wheel inputs."
+  ],
+  "reponse": "B",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 93,
+  "question": "When do the control wheel stabilizer trim switches control stabilizer movement directly ?",
+  "choix": [
+   "All the time.",
+   "Only during approaches.",
+   "Only on the ground.",
+   "During engine out go-arounds."
+  ],
+  "reponse": "C",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 94,
+  "question": "When are pitch trim changes required with the 777 fly-by-wire system ?",
+  "choix": [
+   "During airspeed changes.",
+   "When the landing gear configuration changes.",
+   "When thrust changes.",
+   "B and C are correct."
+  ],
+  "reponse": "A",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 95,
+  "question": "What happens when the stabilizer signal is not present or is invalid ?",
+  "choix": [
+   "The EICAS message STAB GREENBAND displays.",
+   "The green band on the indicator turns amber.",
+   "The green band and the pointer are not displayed.",
+   "The CDU displays the VERIFY TRIM message in the scratchpad."
+  ],
+  "reponse": "C",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 96,
+  "question": "When do the alternate pitch trim levers move the stabilizer ?",
+  "choix": [
+   "When the autopilot is disengaged.",
+   "Only on the ground.",
+   "During flight control SECONDARY and DIRECT modes.",
+   "The levers move the stabilizer directly at all times."
+  ],
+  "reponse": "D",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 97,
+  "question": "The \" PRI FLIGHT COMPUTERS \" caution messages indicates ?",
+  "choix": [
+   "The system is in Primary mode.",
+   "The system is in Direct mode.",
+   "Flight control modes are not affected.",
+   "The system is in Secondary mode."
+  ],
+  "reponse": "B",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 98,
+  "question": "What are the initial steps to extend the flaps using the alternate Flap System ?",
+  "choix": [
+   "Arm ALT FLAPS ARM switch, Select ALT FLAPS Selector to EXT.",
+   "Arm ALT FLAPS ARM switch, Select NORMAL FLAPS Selector to 20.",
+   "Arm ALT FLAPS ARM switch, Select ALT FLAPS Selector to OFF.",
+   "Arm ALT FLAPS ARM switch to OFF, Select ALT FLAPS Selector to EXT."
+  ],
+  "reponse": "A",
+  "page": 24,
+  "image": null
+ },
+ {
+  "id": 99,
+  "question": "In normal mode, slats extend to midrange position when flaps are selected to :",
+  "choix": [
+   "1° only.",
+   "1° to 5°.",
+   "1° to 15°.",
+   "1° to 20°."
+  ],
+  "reponse": "D",
+  "page": 25,
+  "image": null
+ },
+ {
+  "id": 100,
+  "question": "PFC protect in all modes against overspeed, stall and bank angle :",
+  "choix": [
+   "True.",
+   "False."
+  ],
+  "reponse": "B",
+  "page": 25,
+  "image": null
+ },
+ {
+  "id": 101,
+  "question": "In PFC secondary mode, are lost :",
+  "choix": [
+   "A/P, auto speedbrakes, envelope protection, gust suppression, TAC, YD and tail strike protection on B777-300ER.",
+   "A/P, A/T, normal flaps and normal gear extension.",
+   "A/P, ENG LIM, TAC, normal braking."
+  ],
+  "reponse": "A",
+  "page": 25,
+  "image": null
+ },
+ {
+  "id": 102,
+  "question": "What does the Primary L ENG hydraulic pump FAULT light indicate ?",
+  "choix": [
+   "Engine EGT is high or engine speed is low.",
+   "The left Engine Primary fuel pump is inoperative.",
+   "Hydraulic Pump pressure is low or temperature is high.",
+   "The Left Engine is faulty."
+  ],
+  "reponse": "C",
+  "page": 26,
+  "image": null
+ },
+ {
+  "id": 103,
+  "question": "Flight Control hydraulic power switches :",
+  "choix": [
+   "Are isolated from electrical power in flight.",
+   "Are for ground maintenance use only.",
+   "Have to be recycled by crew after hydraulic problem."
+  ],
+  "reponse": "B",
+  "page": 26,
+  "image": null
+ },
+ {
+  "id": 104,
+  "question": "How many hydraulic systems are needed to power enough of the Flight Controls for safe flight ?",
+  "choix": [
+   "One system.",
+   "Two systems.",
+   "Three systems."
+  ],
+  "reponse": "A",
+  "page": 26,
+  "image": null
+ },
+ {
+  "id": 105,
+  "question": "Ram Air Turbin :",
+  "choix": [
+   "Can provide hydraulic power either to the left, center or right hydraulic system.",
+   "Never deploys automatically.",
+   "Can be deployed manually.",
+   "Can be stowed in flight if no more necessary."
+  ],
+  "reponse": "C",
+  "page": 26,
+  "image": null
+ },
+ {
+  "id": 106,
+  "question": "When a demand pump selector is on AUTO :",
+  "choix": [
+   "The demand pump operates with the primary pump(s) when pressure is normal.",
+   "The demand pump operates with the primary pump(s) when pressure is low or when control logic anticipates a large system demand.",
+   "The demand pump operates when the primary pump(s) pressure is low or to extend or retract the landing gear.",
+   "The demand pump runs continuously."
+  ],
+  "reponse": "B",
+  "page": 26,
+  "image": null
+ },
+ {
+  "id": 107,
+  "question": "If the Left and Right hydraulic systems are lost, can the Center Hydraulic system sufficiently power enough of the Flight Controls for safe flight ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "A",
+  "page": 26,
+  "image": null
+ },
+ {
+  "id": 108,
+  "question": "How many hydraulic systems on B777 ?",
+  "choix": [
+   "3 : Left, Center and RAT.",
+   "4 : Left, Center, Right and RAT.",
+   "3 : Left, Center and Right."
+  ],
+  "reponse": "C",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 109,
+  "question": "Thrust reversers are powered by :",
+  "choix": [
+   "Left and Right hydraulic systems.",
+   "Center hydraulic.",
+   "Center and Right hydraulic."
+  ],
+  "reponse": "A",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 110,
+  "question": "RAT deploys automatically in flight if :",
+  "choix": [
+   "Both engines are failed and Center hydraulic system pressure is low.",
+   "Both AC transfert busses are unpowered.",
+   "All 3 hydraulic system pressures are low.",
+   "All answers are true"
+  ],
+  "reponse": "D",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 111,
+  "question": "When can the Ram Air Turbin be deployed :",
+  "choix": [
+   "When airspeed is greater than 270 kt.",
+   "Below 41 000 ft.",
+   "Throughout the whole flight envelope.",
+   "When airspeed is greater than 170 kt."
+  ],
+  "reponse": "C",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 112,
+  "question": "Normal brakes are powered by :",
+  "choix": [
+   "Center hydraulic system.",
+   "Left hydraulic system.",
+   "Right hydraulic system.",
+   "RAT."
+  ],
+  "reponse": "C",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 113,
+  "question": "Which hydraulic pumps are electric motor-driver ?",
+  "choix": [
+   "All demand pumps.",
+   "All primary pumps.",
+   "C1 and C2 primary and Left and Right demand pumps.",
+   "Left and Right primary pumps."
+  ],
+  "reponse": "C",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 114,
+  "question": "On which position are all demand pumps selectors during normal flight ?",
+  "choix": [
+   "OFF.",
+   "ON.",
+   "AUTO."
+  ],
+  "reponse": "C",
+  "page": 27,
+  "image": null
+ },
+ {
+  "id": 115,
+  "question": "C1 and C2 air-driven pumps cannot operate simultaneously when both selected ON :",
+  "choix": [
+   "True.",
+   "False."
+  ],
+  "reponse": "A",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 116,
+  "question": "Left and Right Primary pumps are :",
+  "choix": [
+   "Electric motor-driven.",
+   "Air-driven.",
+   "Engine-driven."
+  ],
+  "reponse": "C",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 117,
+  "question": "Aircraft on ground engine running. If Left and Right hydraulic demand pumps selectors are set AUTO :",
+  "choix": [
+   "The Left demand pump operates continuously.",
+   "The Right demand pump operates continuously.",
+   "Both demand pumps operate continuously."
+  ],
+  "reponse": "B",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 118,
+  "question": "On Hydraulic Status Display, the indication RF (white) :",
+  "choix": [
+   "Is displayed as soon as a reservoir requires filling.",
+   "Is displayed only on ground when reservoir requires refilling.",
+   "Is displayed in flight in case of reservoir low level."
+  ],
+  "reponse": "B",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 119,
+  "question": "In normal operations, the Left hydraulic system power :",
+  "choix": [
+   "Flight controls, Normal brakes, Left engine thrust reverser.",
+   "Flight controls, Left engine thrust reverser.",
+   "Flight controls, Normal brakes, Right engine thrust reverser."
+  ],
+  "reponse": "B",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 120,
+  "question": "EICAS message HYD OVERHEAT PRI C1, C2, L, R, appears in case of :",
+  "choix": [
+   "Excessive demand pump fluid temperature.",
+   "Primary pump temperature is high.",
+   "Both answers are correct."
+  ],
+  "reponse": "B",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 121,
+  "question": "On Hydraulic Status Display, hydraulic quantities (QTY) indications are displayed :",
+  "choix": [
+   "In pounds per inch.",
+   "In liters.",
+   "As a percentage of normal service level."
+  ],
+  "reponse": "C",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 122,
+  "question": "What components can be powered by RAT ?",
+  "choix": [
+   "Main gear and steering.",
+   "Primary flight controls.",
+   "Slats and flaps."
+  ],
+  "reponse": "B",
+  "page": 28,
+  "image": null
+ },
+ {
+  "id": 123,
+  "question": "The Alternate brakes system is powered by :",
+  "choix": [
+   "Left hydraulic system.",
+   "Center hydraulic system.",
+   "Right hydraulic system."
+  ],
+  "reponse": "B",
+  "page": 29,
+  "image": null
+ },
+ {
+  "id": 124,
+  "question": "Which of the three following propositions, shut the hydraulic fluid arrival to the Left Primary pump ?",
+  "choix": [
+   "Pull the Left Engine Fire Switch.",
+   "Switch OFF the left Engine DEMAND Pump Switch.",
+   "Switch OFF the Left Engine Fuel Control Switch."
+  ],
+  "reponse": "A",
+  "page": 29,
+  "image": null
+ },
+ {
+  "id": 125,
+  "question": "In case of low quantity, detected on Hydraulic Center system, some components are isolated :",
+  "choix": [
+   "Whatever the airspeed.",
+   "If airspeed is greater than 60 kt.",
+   "If airspeed is greater than 160 kt."
+  ],
+  "reponse": "B",
+  "page": 29,
+  "image": null
+ },
+ {
+  "id": 126,
+  "question": "Select the true statement about alternate gear extension ?",
+  "choix": [
+   "Alternate gear extension uses hydraulic pressure to extend the landing gear.",
+   "After the landing gear is extended the main gear doors retract.",
+   "The normal landing gear indications are displayed on the EICAS.",
+   "Landing gear may be retracted after alternate extension, if hydraulics is available."
+  ],
+  "reponse": "C",
+  "page": 30,
+  "image": null
+ },
+ {
+  "id": 127,
+  "question": "Select the true statement about alternate gear extension ?",
+  "choix": [
+   "After the landing gear is extended the main gear doors retract.",
+   "The landing gear free falls to the extended position.",
+   "Landing gear cannot be retracted after alternate extension.",
+   "Hydraulic pressure extends the landing gear."
+  ],
+  "reponse": "B",
+  "page": 30,
+  "image": null
+ },
+ {
+  "id": 128,
+  "question": "Which statement is True about the rudder pedals ?",
+  "choix": [
+   "The rudder pedals are best used for sharp turns.",
+   "They are locked to center at high speeds.",
+   "They control only nose wheel steering and the rudder.",
+   "They control nose wheel steering, main gear steering and the rudder."
+  ],
+  "reponse": "C",
+  "page": 30,
+  "image": null
+ },
+ {
+  "id": 129,
+  "question": "Which statement is true ? Main Gear steering is commanded :",
+  "choix": [
+   "Whenever rudder pedals must be used for sharp turns.",
+   "When rudder pedals reach maximum deflection.",
+   "When nose wheel angle exceeds 70 degrees.",
+   "When the nose wheel steering angle exceeds 13 degrees."
+  ],
+  "reponse": "D",
+  "page": 30,
+  "image": null
+ },
+ {
+  "id": 130,
+  "question": "Why is the BRAKE SOURCE light illuminated ?",
+  "choix": [
+   "The EICAS advisory message BRAKE SOURCE is inoperative.",
+   "Pressure is normal in the left hydraulic system.",
+   "Normal and Alternate brake system pressures are not available.",
+   "The alternate brake system is on battery power only."
+  ],
+  "reponse": "C",
+  "page": 30,
+  "image": null
+ },
+ {
+  "id": 131,
+  "question": "How do you know the parking brake is set ?",
+  "choix": [
+   "The EICAS message PARKING BRAKE SET is displayed.",
+   "Normal and alternate brake pressures are available.",
+   "The parking brake lever is in the up position.",
+   "The BRAKE SOURCE light is extinguished."
+  ],
+  "reponse": "A",
+  "page": 30,
+  "image": null
+ },
+ {
+  "id": 132,
+  "question": "What can you say about the parking brake if the PARKING BRAKE SET message is not displayed ?",
+  "choix": [
+   "It is set because the APU RUNNING message is displayed.",
+   "It is not set.",
+   "It cannot be set because the brake accumulator pressure is 1500 psi.",
+   "The APU RUNNING message will hide the PARKING BRAKE SET message."
+  ],
+  "reponse": "B",
+  "page": 31,
+  "image": null
+ },
+ {
+  "id": 133,
+  "question": "Which AUTOBRAKE Selector setting would you see immediately, after takeoff ?",
+  "choix": [
+   "MAX AUTO.",
+   "DISARM.",
+   "OFF.",
+   "RTO."
+  ],
+  "reponse": "C",
+  "page": 31,
+  "image": null
+ },
+ {
+  "id": 134,
+  "question": "Which autobrake mode provides the highest deceleration rate for landing ?",
+  "choix": [
+   "AUTOBRAKE.",
+   "AUTOBRAKE MAX.",
+   "AUTOBRAKE 4.",
+   "AUTOBRAKE RTO."
+  ],
+  "reponse": "B",
+  "page": 31,
+  "image": null
+ },
+ {
+  "id": 135,
+  "question": "Brake accumulator is located on hydraulic system :",
+  "choix": [
+   "R.",
+   "C.",
+   "L."
+  ],
+  "reponse": "A",
+  "page": 31,
+  "image": null
+ },
+ {
+  "id": 136,
+  "question": "When hydraulic systems R and C are lost, brakes are powered by :",
+  "choix": [
+   "L system.",
+   "C1 primary pump and isolated part of C system.",
+   "Pneumatic stanby system."
+  ],
+  "reponse": "B",
+  "page": 31,
+  "image": null
+ },
+ {
+  "id": 137,
+  "question": "Anti skid is available in all braking modes :",
+  "choix": [
+   "True",
+   "False"
+  ],
+  "reponse": "A",
+  "page": 31,
+  "image": null
+ },
+ {
+  "id": 138,
+  "question": "What lights are turned on by the STORM switch ?",
+  "choix": [
+   "All flight deck lights.",
+   "All lights in the airplane.",
+   "Aisle stand, glareshield, and instrument flood light and dome lights, indicator lights.",
+   "Landing lights, navigation lights, strobe lights and wing lights."
+  ],
+  "reponse": "C",
+  "page": 32,
+  "image": null
+ },
+ {
+  "id": 139,
+  "question": "What lights are turned to full bright by the STORM switch ?",
+  "choix": [
+   "All exterior lights.",
+   "All panel and flood lights.",
+   "Floor lights, all panel lights, and CDU displays, indicator lights.",
+   "Dome lights, all flood lights, and illuminated indicator lights."
+  ],
+  "reponse": "D",
+  "page": 32,
+  "image": null
+ },
+ {
+  "id": 140,
+  "question": "What happens if you adjust an individual panel light brightness or display brightness control when Master bright system is on ?",
+  "choix": [
+   "It has no effect.",
+   "The MASTER BRIGHT system turns off.",
+   "The Brightness of ALL panel lights and ALL displays changes by a small amount.",
+   "The Brightness of the individual panel light or display changes by a small amount."
+  ],
+  "reponse": "D",
+  "page": 32,
+  "image": null
+ },
+ {
+  "id": 141,
+  "question": "What position is required for the MASTER BRIGHT system to have full range of control, individual panel light brightness or display brightness ?",
+  "choix": [
+   "12 o'clock.",
+   "6 o'clock.",
+   "10 o'clock.",
+   "2 o'clock."
+  ],
+  "reponse": "A",
+  "page": 32,
+  "image": null
+ },
+ {
+  "id": 142,
+  "question": "What does the seat adjustment scale indicate ?",
+  "choix": [
+   "Height and forward position.",
+   "Height only.",
+   "Side position only.",
+   "Side and height position."
+  ],
+  "reponse": "A",
+  "page": 32,
+  "image": null
+ },
+ {
+  "id": 143,
+  "question": "When does the Fasten Seat Belt Sign automatically illuminate ?",
+  "choix": [
+   "With the landing gear up.",
+   "When the cabin altitude is below 10 000 feet.",
+   "When the passenger oxygen system is ON.",
+   "When the flaps are up."
+  ],
+  "reponse": "C",
+  "page": 32,
+  "image": null
+ },
+ {
+  "id": 144,
+  "question": "When does the No Smoking Sign illuminate ?",
+  "choix": [
+   "Always.",
+   "With the flaps extended.",
+   "When the passenger oxygen system is ON.",
+   "On the ground and with the flaps extended"
+  ],
+  "reponse": "A",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 145,
+  "question": "How many quick donning oxygen masks are installed on the flight deck ?",
+  "choix": [
+   "One for each pilot.",
+   "One for each observer.",
+   "One for each pilot, one for each observer.",
+   "One for each pilot and only one observer mask."
+  ],
+  "reponse": "C",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 146,
+  "question": "What is the status of the crew oxygen system if the oxygen status display is blank ?",
+  "choix": [
+   "Crew oxygen pressure is within acceptable limits.",
+   "Crew oxygen system has been turned off.",
+   "Crew oxygen pressure signal is not present or is invalid.",
+   "Crew oxygen pressure is low."
+  ],
+  "reponse": "C",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 147,
+  "question": "What does the \" CREW OXYGEN LOW \" message indicate ?",
+  "choix": [
+   "Crew oxygen pressure is low.",
+   "Crew oxygen system has been turned off.",
+   "Crew oxygen system has failed.",
+   "Crew oxygen system quantity is low."
+  ],
+  "reponse": "A",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 148,
+  "question": "What does the \" PASS OXYGEN ON \" message indicate ?",
+  "choix": [
+   "Passenger oxygen has been manually or automatically activated.",
+   "Passenger oxygen system has been manually deactivated.",
+   "Passenger oxygen system has been lost.",
+   "Passenger system has been automatically deactivated."
+  ],
+  "reponse": "A",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 149,
+  "question": "What automatically activates the airplane emergency lighting system ?",
+  "choix": [
+   "Selecting the EMER LIGHTS switch on the overhead panel to the OFF position.",
+   "Loss of the left and right main DC electrical power.",
+   "Loss of left and right backup generators.",
+   "Loss of APU generator."
+  ],
+  "reponse": "B",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 150,
+  "question": "What manually activates the airplane emergency lighting system ?",
+  "choix": [
+   "Closing the EMER LIGHTS switch guard.",
+   "Selecting the APU GEN switch to the ON position.",
+   "Turning on the left and right backup generators.",
+   "Selecting the EMER LIGHTS switch on the overhead panel to ON."
+  ],
+  "reponse": "D",
+  "page": 33,
+  "image": null
+ },
+ {
+  "id": 151,
+  "question": "If all electrical power is available. what causes the \" EMER LIGHTS \" advisory message to be displayed ?",
+  "choix": [
+   "The emergency lighting system has failed.",
+   "The EMER LIGHTS switch on the overhead panel is in the ARMED position.",
+   "The EMER LIGHTS switch on the overhead panel is in the ARMED position and the emergency lights have been turned on by a Flight Attendant.",
+   "The APU generator is turned off."
+  ],
+  "reponse": "C",
+  "page": 34,
+  "image": null
+ },
+ {
+  "id": 152,
+  "question": "Can the Flight Deck side windows be operated in flight ?",
+  "choix": [
+   "Yes, but only at airspeeds below 200 kt.",
+   "Yes, but only at airspeeds below Vref + 80 kt.",
+   "Yes, but only if the airplane is unpressurized and airspeed is below Vref + 80 kt.",
+   "No, the flight deck side windows can not be operated in flight."
+  ],
+  "reponse": "C",
+  "page": 34,
+  "image": null
+ },
+ {
+  "id": 153,
+  "question": "What would indicate that a flight deck side window is NOT properly locked ?",
+  "choix": [
+   "WINDOW NOT CLOSED placard not in view and the lock lever is fully forward and in the locked position.",
+   "Audible caution tone is heard.",
+   "Side window hand crank is not in the locked position.",
+   "WINDOW NOT CLOSED placard is visible or the lock lever is not fully forward and in the locked position."
+  ],
+  "reponse": "D",
+  "page": 34,
+  "image": null
+ },
+ {
+  "id": 154,
+  "question": "What does the \" WINDOW FLT DECK R \" advisory message indicate ?",
+  "choix": [
+   "Operation of the flight deck right side window is inhibited.",
+   "The left side window is NOT closed or is unlocked.",
+   "The right side window heat is inoperative.",
+   "The right side window is not closed or is unlocked."
+  ],
+  "reponse": "D",
+  "page": 34,
+  "image": null
+ },
+ {
+  "id": 155,
+  "question": "What does the displayed \" WINDOWS \" advisory message indicate ?",
+  "choix": [
+   "The left and right side windows are open or unlocked.",
+   "The left side window is open or unlocked.",
+   "The right side window is open or unlocked.",
+   "Window heat is inoperative."
+  ],
+  "reponse": "A",
+  "page": 34,
+  "image": null
+ },
+ {
+  "id": 156,
+  "question": "What action is required if the \" DOOR AFT CARGO \" caution message occurs in flight ?",
+  "choix": [
+   "Cabin altitude should be increased.",
+   "The airplane must be depressurized to minimize the risk of door separation.",
+   "No action is required if pressurization is normal.",
+   "No action is required."
+  ],
+  "reponse": "B",
+  "page": 34,
+  "image": null
+ },
+ {
+  "id": 157,
+  "question": "What does the \" CONFIG DOORS \" warning message indicate ?",
+  "choix": [
+   "Both engines are at takeoff thrust and a passenger ENTRY door, FWD CARGO door or AFT CARGO door is not secured and locked.",
+   "Both engines are at takeoff thrust and the mode selector handles of at least 2 passenger entry doors are in the manual position.",
+   "Both engines are at takeoff thrust and at least 2 passenger entry doors are in the manual position.",
+   "Both engines are at takeoff thrust and the latching mechanism of the forward cargo door has malfunctioned."
+  ],
+  "reponse": "A",
+  "page": 35,
+  "image": null
+ },
+ {
+  "id": 158,
+  "question": "By NOTAM, a taxiway is limited to wingspan less than 60m. Can you use this taxiway ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "B",
+  "page": 35,
+  "image": null
+ },
+ {
+  "id": 159,
+  "question": "In the main deck cargo door area, there is :",
+  "choix": [
+   "An evacuation slide.",
+   "An escape rope.",
+   "Answers A and B are true.",
+   "There is no evacuation mean."
+  ],
+  "reponse": "B",
+  "page": 35,
+  "image": null
+ },
+ {
+  "id": 160,
+  "question": "A lad is taking care of a horse on main deck cargo compartment when the aural alert sounds and the sidewall lights flash. The lad should :",
+  "choix": [
+   "Go back to his seat and fasten his seat belt.",
+   "Wear the nearest smoke hood and go back to his seat.",
+   "Wear the smoke hood he would have brought with him and go back to his seat."
+  ],
+  "reponse": "C",
+  "page": 35,
+  "image": null
+ },
+ {
+  "id": 161,
+  "question": "When can engine anti-ice be operated manually ?",
+  "choix": [
+   "Only on the ground.",
+   "Only in the air.",
+   "On the ground or in the air.",
+   "Only when TAT is above 10°C."
+  ],
+  "reponse": "C",
+  "page": 36,
+  "image": null
+ },
+ {
+  "id": 162,
+  "question": "What do the EAI symbols on EICAS indicate ?",
+  "choix": [
+   "Engine anti-ice is armed.",
+   "Engine anti-ice is operating.",
+   "Engine anti-ice has failed.",
+   "Engine anti-ice should be turned off."
+  ],
+  "reponse": "B",
+  "page": 36,
+  "image": null
+ },
+ {
+  "id": 163,
+  "question": "What is the position of an engine anti-ice valve when the engine anti-ice selector is in AUTO and EAI is displayed ?",
+  "choix": [
+   "Open.",
+   "Closed.",
+   "Inoperative.",
+   "Cannot be determined."
+  ],
+  "reponse": "A",
+  "page": 36,
+  "image": null
+ },
+ {
+  "id": 164,
+  "question": "When can wing anti-ice be operated manually ?",
+  "choix": [
+   "Only on the ground.",
+   "On the ground or in the air.",
+   "Only in flight.",
+   "Only when TAT is above 10°C."
+  ],
+  "reponse": "C",
+  "page": 36,
+  "image": null
+ },
+ {
+  "id": 165,
+  "question": "When will wing anti-ice operate automatically ?",
+  "choix": [
+   "Only on the ground.",
+   "Only in flight.",
+   "Both on the ground and in flight.",
+   "Only when TAT is above 10°C."
+  ],
+  "reponse": "B",
+  "page": 36,
+  "image": null
+ },
+ {
+  "id": 166,
+  "question": "Which windows are heated for both anti-ice and anti-fog protection ?",
+  "choix": [
+   "Both pilot's forward windows.",
+   "Left pilot's forward window and right pilot's side window.",
+   "All windows.",
+   "Left pilot's forward and side window and right pilot's forward and side window."
+  ],
+  "reponse": "A",
+  "page": 36,
+  "image": null
+ },
+ {
+  "id": 167,
+  "question": "Why are the wipers never operated on a dry windshield ?",
+  "choix": [
+   "The wiper blades will be ruined.",
+   "The wiper motor may burn out.",
+   "The hydrophobic coating may be scratched.",
+   "The bugs will be smeared all over the window."
+  ],
+  "reponse": "C",
+  "page": 37,
+  "image": null
+ },
+ {
+  "id": 168,
+  "question": "Why are the wiper selectors set to OFF during preflight ?",
+  "choix": [
+   "To avoid wiper operation on dry windshields.",
+   "To avoid damage to the wiper blades.",
+   "To allow the hydrophobic coating to warm up.",
+   "To avoid possible injury to maintenance personnel."
+  ],
+  "reponse": "A",
+  "page": 37,
+  "image": null
+ },
+ {
+  "id": 169,
+  "question": "What does the \" WINDOW HEAT R FWD \" advisory message mean ?",
+  "choix": [
+   "The WINDOW HEAT R FWD switch is off.",
+   "The window is still in the warm up cycle.",
+   "An overheat or fault has occurred.",
+   "Either A or C is correct."
+  ],
+  "reponse": "D",
+  "page": 37,
+  "image": null
+ },
+ {
+  "id": 170,
+  "question": "What does the \" WINDOW HEAT \" advisory message mean ?",
+  "choix": [
+   "The backup window heat system is inoperative.",
+   "The windows are using back up heat.",
+   "Two or more window heat faults have occurred.",
+   "A single overheat or fault has occured."
+  ],
+  "reponse": "C",
+  "page": 37,
+  "image": null
+ },
+ {
+  "id": 171,
+  "question": "When will the \" ANTI-ICE ON \" advisory message be displayed ?",
+  "choix": [
+   "TAT above 10°C, all ANTI-ICE selectors OFF and NO ice is detected.",
+   "TAT below 10°C, all ANTI-ICE selectors ON and ice is detected.",
+   "TAT above 10°C, any ANTI-ICE selector ON and NO ice is detected.",
+   "TAT below 10°C, any ANTI-ICE selector OFF and NO ice is detected."
+  ],
+  "reponse": "C",
+  "page": 37,
+  "image": null
+ },
+ {
+  "id": 172,
+  "question": "What position of the ANTI-ICE selectors will remove the \" ANTI-ICE ON \" advisory message ?",
+  "choix": [
+   "AUTO.",
+   "ON.",
+   "OFF.",
+   "AUTO and OFF."
+  ],
+  "reponse": "D",
+  "page": 37,
+  "image": null
+ },
+ {
+  "id": 173,
+  "question": "What position should the ENGINE ANTI-ICE selectors be in for taxiing in icing conditions ?",
+  "choix": [
+   "AUTO.",
+   "ON.",
+   "OFF.",
+   "AUTO and ON."
+  ],
+  "reponse": "B",
+  "page": 38,
+  "image": null
+ },
+ {
+  "id": 174,
+  "question": "What position should the WING ANTI-ICE selector be in for taxiing in icing conditions ?",
+  "choix": [
+   "AUTO.",
+   "ON.",
+   "OFF.",
+   "AUTO and ON."
+  ],
+  "reponse": "A",
+  "page": 38,
+  "image": null
+ },
+ {
+  "id": 175,
+  "question": "What action should you take if the \" ICE DETECTORS \" advisory message displays ?",
+  "choix": [
+   "Turn all anti-ice selectors to ON then back to AUTO to reset the system.",
+   "Turn all anti-ice selectors OFF for remainder of flight and avoid icing.",
+   "Turn all anti-ice selectors ON when icing conditions are encountered.",
+   "Turn all anti-ice selectors ON for remainder of flight."
+  ],
+  "reponse": "C",
+  "page": 38,
+  "image": null
+ },
+ {
+  "id": 176,
+  "question": "What occurs when engine anti-ice is operating ?",
+  "choix": [
+   "Probe heat switches from reduced to full power.",
+   "Approach idle is selected by the EEC.",
+   "The ENGINE ANTI-ICE ON memo message displays.",
+   "The backup window heat system operates."
+  ],
+  "reponse": "B",
+  "page": 38,
+  "image": null
+ },
+ {
+  "id": 177,
+  "question": "When engine anti-ice is operating, do you have to set engine ignition selector on CON position ?",
+  "choix": [
+   "No, it is automatic.",
+   "Yes, if outside temperature is below -10°C."
+  ],
+  "reponse": "A",
+  "page": 38,
+  "image": null
+ },
+ {
+  "id": 178,
+  "question": "Under normal conditions what is the source of bleed air to start the second engine ?",
+  "choix": [
+   "Engine.",
+   "APU.",
+   "Ground Carts."
+  ],
+  "reponse": "B",
+  "page": 39,
+  "image": null
+ },
+ {
+  "id": 179,
+  "question": "Which are Bleed air sources ?",
+  "choix": [
+   "Engines and APU.",
+   "Demand pump.",
+   "Pressurization.",
+   "Packs."
+  ],
+  "reponse": "A",
+  "page": 39,
+  "image": null
+ },
+ {
+  "id": 180,
+  "question": "Why should the CABIN TEMP selector be set to mid position ?",
+  "choix": [
+   "To set the maximum temperature in any zone.",
+   "To allow full temperature range adjustment on cabin attendant panel.",
+   "To prevent cabin overheat during low altitude flight.",
+   "To set the actual temperature in cabin zones A-F."
+  ],
+  "reponse": "B",
+  "page": 39,
+  "image": null
+ },
+ {
+  "id": 181,
+  "question": "What does the MAN position on the FLT DECK TEMP selector do ?",
+  "choix": [
+   "It removes power from the Trim Air system.",
+   "It causes the packs to provide air at an average mid temperature range.",
+   "It allows the Trim Air valve to operate manually.",
+   "It removes the control at the Cabin Attendant Panel."
+  ],
+  "reponse": "C",
+  "page": 39,
+  "image": null
+ },
+ {
+  "id": 182,
+  "question": "What happens if the FLT DECK TEMP selector is moved to the \" C \" position ?",
+  "choix": [
+   "The pack temperature decreases.",
+   "It opens the flight Deck-Trim air Valve.",
+   "It closes the Trim Air Valve and lowers the Flight Deck temperature.",
+   "It cancels input to the Flight Deck Temperature Controller."
+  ],
+  "reponse": "C",
+  "page": 39,
+  "image": null
+ },
+ {
+  "id": 183,
+  "question": "What is the temperature range of the FLIGHT DECK TEMPERATURE Control ?",
+  "choix": [
+   "From 18 to 29°C.",
+   "From 17 to 28°C.",
+   "From 16 to 29°C.",
+   "There is no correlation between settings and temperature."
+  ],
+  "reponse": "A",
+  "page": 39,
+  "image": null
+ },
+ {
+  "id": 184,
+  "question": "When is the PACK OFF light illuminated amber ?",
+  "choix": [
+   "The Pack Valve is failed closed.",
+   "When there is a pack compressor outlet high temperature condition.",
+   "Bleed Air pressure is inadequate.",
+   "All answers are true."
+  ],
+  "reponse": "D",
+  "page": 40,
+  "image": null
+ },
+ {
+  "id": 185,
+  "question": "What happens when the BULK CARGO TEMPERATURE Selector is positioned to HIGH ?",
+  "choix": [
+   "The compartment temperature is automatically keep at approximately 7°C.",
+   "The compartment temperature is automatically keep at approximately 21°C.",
+   "The Bulk cargo compartment ventilation fan operates continuously.",
+   "The compartment temperature is automatically keep at approximately 21°C and the Bulk cargo compartment ventilation fan operates continuously."
+  ],
+  "reponse": "D",
+  "page": 40,
+  "image": null
+ },
+ {
+  "id": 186,
+  "question": "What temperature does the pack maintain with loss of both cabin temperature controllers ?",
+  "choix": [
+   "At 42°C.",
+   "At 38°C.",
+   "Between 5 and 43°C.",
+   "Between 10 and 38°C."
+  ],
+  "reponse": "C",
+  "page": 40,
+  "image": null
+ },
+ {
+  "id": 187,
+  "question": "Which system(s) supply trim air to the flight deck ?",
+  "choix": [
+   "Right Trim air system.",
+   "Left Trim air system.",
+   "Both right and Left Trim air systems.",
+   "Center Trim air system."
+  ],
+  "reponse": "B",
+  "page": 40,
+  "image": null
+ },
+ {
+  "id": 188,
+  "question": "How does the Trim Air system meet zone temperature requirements ?",
+  "choix": [
+   "It controls pack air temperature.",
+   "It heats conditioned air.",
+   "It cools conditioned air."
+  ],
+  "reponse": "B",
+  "page": 40,
+  "image": null
+ },
+ {
+  "id": 189,
+  "question": "When does the EICAS advisory message \" EQUIP COOLING \" display ?",
+  "choix": [
+   "When one of the two supply fans is inoperative.",
+   "In the air, when the forward equipment cooling system is inoperative.",
+   "On the ground when the forward equipment cooling system is inoperative.",
+   "On the ground when the aft equipment cooling system is inoperative."
+  ],
+  "reponse": "C",
+  "page": 40,
+  "image": null
+ },
+ {
+  "id": 190,
+  "question": "Which statements are correct about the Equipment Cooling Override mode ?",
+  "choix": [
+   "The mode is selected automatically.",
+   "The EICAS message \" EQUIP COOLING OVRD \" is displayed.",
+   "There is a non-normal procedure for this message.",
+   "A, B, C are all correct."
+  ],
+  "reponse": "D",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 191,
+  "question": "During climb what parameters schedule cabin altitude ?",
+  "choix": [
+   "Airplane flight altitude.",
+   "A constant pressure differential.",
+   "Airplane climb rate and flight plan cruise altitude.",
+   "Takeoff and Landing field elevation."
+  ],
+  "reponse": "C",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 192,
+  "question": "What is the cabin altitude at maximum certified airplane operating altitude ?",
+  "choix": [
+   "9000 feet.",
+   "10 000 feet.",
+   "8000 feet.",
+   "7500 feet."
+  ],
+  "reponse": "C",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 193,
+  "question": "What is the source of supplemental heat for the aft cargo compartment ?",
+  "choix": [
+   "Forward equipment cooling exhaust air.",
+   "Left Recirculation Fan.",
+   "An electric heater.",
+   "An independent bleed heat system."
+  ],
+  "reponse": "D",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 194,
+  "question": "What is bleed air used for ?",
+  "choix": [
+   "Pressurizing the hydraulic reservoir.",
+   "Aspirating the TAT probe.",
+   "None of the above.",
+   "Pressurizing the hydraulic reservoir and aspirating the TAT probe."
+  ],
+  "reponse": "D",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 195,
+  "question": "When does the ground crew call horn sound ?",
+  "choix": [
+   "When hydraulics are pressurized.",
+   "In case of an APU fire.",
+   "Before starting engines.",
+   "When cooling of forward electronic/electrical equipment is inoperative."
+  ],
+  "reponse": "D",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 196,
+  "question": "Why minimize the low altitude flight time for \" EQUIP COOLING OVRD \" message ?",
+  "choix": [
+   "AFT and BULK cargo compartments may overheat.",
+   "Pack temperature would cause damage.",
+   "Equipment displays could fail.",
+   "Recirculation fans may not cool equipment adequately."
+  ],
+  "reponse": "C",
+  "page": 41,
+  "image": null
+ },
+ {
+  "id": 197,
+  "question": "What actions should you take if \" EQUIP COOLING OVRD \" message is displayed ?",
+  "choix": [
+   "Descend to a lower altitude and continue the flight.",
+   "Monitor equipment temperature on EICAS.",
+   "Turn off FWD and AFT recycling fans.",
+   "Plan descent for minimum time at low altitude."
+  ],
+  "reponse": "D",
+  "page": 42,
+  "image": null
+ },
+ {
+  "id": 198,
+  "question": "What does the \" PACK MODE R \" advisory message indicate ?",
+  "choix": [
+   "The right Pack is inoperative.",
+   "The right Pack is operating in STBY COOLING mode.",
+   "The STBY COOLING mode is inoperative.",
+   "The airplane is in unfavorable conditions and right Pack output temperature is too high."
+  ],
+  "reponse": "B",
+  "page": 42,
+  "image": null
+ },
+ {
+  "id": 199,
+  "question": "What does a visible orange lip indicate on a pressure relief valve ?",
+  "choix": [
+   "The valve is in it's normally closed position.",
+   "The valve is in it's normally open position.",
+   "The valve opened during the previous flight because cabin overpressure.",
+   "The status of the valve can not be determined by a visual inspection."
+  ],
+  "reponse": "C",
+  "page": 42,
+  "image": null
+ },
+ {
+  "id": 200,
+  "question": "What action is required if a visible orange lip on a pressure relief valve is displayed ?",
+  "choix": [
+   "Action not required the valve is in it's normally closed position.",
+   "Advise maintenance of the open valve.",
+   "Position the landing altitude switch to AUTO.",
+   "Set cabin altitude to less than 8000 ft."
+  ],
+  "reponse": "B",
+  "page": 42,
+  "image": null
+ },
+ {
+  "id": 201,
+  "question": "What system provides the heat for the forward cargo compartment ?",
+  "choix": [
+   "Aft cargo heat system.",
+   "Bleed air from the engines.",
+   "The trim air system.",
+   "Exhaust from the equipment cooling system."
+  ],
+  "reponse": "D",
+  "page": 42,
+  "image": null
+ },
+ {
+  "id": 202,
+  "question": "What is the function of the negative pressure relief vents ?",
+  "choix": [
+   "They prevent negative pressure differentials.",
+   "They minimize cabin overpressure conditions.",
+   "They improve smoke removal ventilation.",
+   "They regulate cabin pressure during climb."
+  ],
+  "reponse": "A",
+  "page": 42,
+  "image": null
+ },
+ {
+  "id": 203,
+  "question": "What is the normal position of the forward and aft outflow valves after landing ?",
+  "choix": [
+   "Full open.",
+   "Full closed.",
+   "In transit.",
+   "30° open."
+  ],
+  "reponse": "A",
+  "page": 43,
+  "image": null
+ },
+ {
+  "id": 204,
+  "question": "During Preflight what position should the APU Bleed Air switch be in ?",
+  "choix": [
+   "OFF.",
+   "AUTO.",
+   "ON.",
+   "OUT."
+  ],
+  "reponse": "B",
+  "page": 43,
+  "image": null
+ },
+ {
+  "id": 205,
+  "question": "After engine starting what is the correct position for the L ENG and R ENG Bleed Air switches ?",
+  "choix": [
+   "OUT.",
+   "ON.",
+   "AUTO.",
+   "OFF."
+  ],
+  "reponse": "B",
+  "page": 43,
+  "image": null
+ },
+ {
+  "id": 206,
+  "question": "During normal bleed air operation what position should the L, C, R ISLN Bleed Air switches be in ?",
+  "choix": [
+   "L ISLN AUTO, R ISLN AUTO, C ISLN OFF.",
+   "OFF.",
+   "AUTO.",
+   "ON."
+  ],
+  "reponse": "C",
+  "page": 43,
+  "image": null
+ },
+ {
+  "id": 207,
+  "question": "During SECURE what positions should the L PACK and R PACK switches be selected to ?",
+  "choix": [
+   "L PACK ON, R PACK OFF.",
+   "AUTO.",
+   "ON.",
+   "OFF."
+  ],
+  "reponse": "D",
+  "page": 43,
+  "image": null
+ },
+ {
+  "id": 208,
+  "question": "Where is the target temperature in the zones displayed ?",
+  "choix": [
+   "On the lower EICAS display when pressurization is selected to MAN.",
+   "On the AIR synoptic.",
+   "On the upper EICAS display when pressurization is selected to MAN.",
+   "On the HYD synoptic."
+  ],
+  "reponse": "B",
+  "page": 43,
+  "image": null
+ },
+ {
+  "id": 209,
+  "question": "In the STBY COOLING MODE what will the pack automatically do if the airplane is not in an area of sufficient cooling ?",
+  "choix": [
+   "Decrease airflow to half rate.",
+   "Shutoff the pack.",
+   "Fail the Pack Standby Cooling controller.",
+   "Increase airflow through the pack."
+  ],
+  "reponse": "B",
+  "page": 44,
+  "image": null
+ },
+ {
+  "id": 210,
+  "question": "What landing altitude is displayed in the ECS block when the airplane has traveled more than 400 miles or has passed the halfway point ?",
+  "choix": [
+   "The Departure airport altitude to the nearest 100 ft.",
+   "The Destination airport altitude to the nearest 100 ft.",
+   "The Destination airport altitude to the nearest 500 ft.",
+   "The Alternate airport altitude to the nearest 50 ft."
+  ],
+  "reponse": "B",
+  "page": 44,
+  "image": null
+ },
+ {
+  "id": 211,
+  "question": "During Preflight what position should the FWD and AFT OUTFLOW VALVE switches and LDG ALT selector switches be in ?",
+  "choix": [
+   "OUTFLOW VALVE SWITCHES in AUTO and LDG ALT selector pulled OUT.",
+   "OUTFLOW VALVE SWITCHES in OFF and LDG ALT selector pushed IN.",
+   "OUTFLOW VALVE SWITCHES in AUTO and LDG ALT selector pushed IN.",
+   "OUTFLOW VALVE SWITCHES in MAN and LDG ALT selector pushed IN."
+  ],
+  "reponse": "C",
+  "page": 44,
+  "image": null
+ },
+ {
+  "id": 212,
+  "question": "What action is required during Preflight if the \" LANDING ALTITUDE \" advisory message is displayed with the FWD and AFT OUTFLOW VALVE switches in AUTO ?",
+  "choix": [
+   "Push the LDG ALT selector IN.",
+   "Pull the LDG ALT selector OUT.",
+   "Select the FWD and AFT OUTFLOW VALVE switches to MAN.",
+   "Push the LDG ALT selector IN and select the FWD and AFT OUTFLOW VALVE switches to MAN."
+  ],
+  "reponse": "A",
+  "page": 44,
+  "image": null
+ },
+ {
+  "id": 213,
+  "question": "Why does the Flight Deck receive air from the left pack at a higher pressure than the passenger cabin ?",
+  "choix": [
+   "The pilots demand it.",
+   "To prevent smoke from entering.",
+   "To defog the forward windows.",
+   "To cool the equipment in the aisle stand."
+  ],
+  "reponse": "B",
+  "page": 44,
+  "image": null
+ },
+ {
+  "id": 214,
+  "question": "Can EICAS \" EQUIP COOLING \" message be displayed in flight ?",
+  "choix": [
+   "No.",
+   "Yes."
+  ],
+  "reponse": "A",
+  "page": 44,
+  "image": null
+ },
+ {
+  "id": 215,
+  "question": "On B777F, the lower aft cargo compartment :",
+  "choix": [
+   "May be heated between 4 and 10°C.",
+   "May be conditioned between 18 ° and 24°C.",
+   "Both answers are true."
+  ],
+  "reponse": "A",
+  "page": 45,
+  "image": null
+ },
+ {
+  "id": 216,
+  "question": "On B777F, the air conditioning system :",
+  "choix": [
+   "Controls 6 zones and uses 1 pair of recirculating fans.",
+   "Controls 8 zones and uses 2 pairs of recirculating fans.",
+   "Controls 8 zones and uses 1 pair of recirculating fans.",
+   "Controls 6 zones and uses 2 pairs of recirculating fans."
+  ],
+  "reponse": "C",
+  "page": 45,
+  "image": null
+ },
+ {
+  "id": 217,
+  "question": "On B777F, the AVS system (Alternate Ventilation System) operates when :",
+  "choix": [
+   "The equipment cooling switches to OVRD mode.",
+   "The LWR FWD CARGO FIRE ARM switch is ARMED.",
+   "Both air conditioning packs are inoperative."
+  ],
+  "reponse": "C",
+  "page": 45,
+  "image": null
+ },
+ {
+  "id": 218,
+  "question": "What does the \" CONFIG WARNING SYS \" advisory message indicate if it displays prior to departure ?",
+  "choix": [
+   "The take-off configuration warning system and the master caution lights are inoperative.",
+   "The take-off configuration warning system is inoperative, or 1 or both master warning lights, or 1 or both warning loudspeakers are inoperative.",
+   "The landing configuration warning system and the master warning lights are inoperative.",
+   "The take-off and landing configuration warning systems, master warning lights, master caution lights, and warning loudspeakers are all inoperative."
+  ],
+  "reponse": "B",
+  "page": 46,
+  "image": null
+ },
+ {
+  "id": 219,
+  "question": "The GPWS provides various warning, caution and advisory level alerts when operating below what altitude ?",
+  "choix": [
+   "1 500 ft barometric altitude.",
+   "2 450 ft radio altitude.",
+   "1 500 ft radio altitude.",
+   "2 450 ft barometric altitude."
+  ],
+  "reponse": "B",
+  "page": 46,
+  "image": null
+ },
+ {
+  "id": 220,
+  "question": "What precaution should be taken if a tail strike occurs during take-off ?",
+  "choix": [
+   "No special precautions are necessary.",
+   "The airplane should not be pressurized.",
+   "Pressurize the airplane to a lower cabin altitude."
+  ],
+  "reponse": "B",
+  "page": 46,
+  "image": null
+ },
+ {
+  "id": 221,
+  "question": "How is a windshear time critical warning alert cancelled ?",
+  "choix": [
+   "By resetting the master warning system.",
+   "By flying out the windshear conditions.",
+   "By pushing the GND PROX switch."
+  ],
+  "reponse": "B",
+  "page": 46,
+  "image": null
+ },
+ {
+  "id": 222,
+  "question": "What are the types of TCAS traffic alerts ?",
+  "choix": [
+   "None, Approximate, Traffic Resolution, Other Advisory.",
+   "Other Advisory, Proximate Advisory, Traffic Advisory, Traffic Resolution.",
+   "Other, Proximate, Traffic Advisory, Resolution Advisory."
+  ],
+  "reponse": "C",
+  "page": 46,
+  "image": null
+ },
+ {
+  "id": 223,
+  "question": "A filled white diamond TCAS alert indicates ?",
+  "choix": [
+   "Other Traffic.",
+   "Proximate Traffic.",
+   "Traffic Advisory (TA).",
+   "Resolution Advisory (RA)."
+  ],
+  "reponse": "B",
+  "page": 46,
+  "image": null
+ },
+ {
+  "id": 224,
+  "question": "A filled red square TCAS alert indicates ?",
+  "choix": [
+   "Other Traffic.",
+   "Proximate Traffic.",
+   "Traffic Advisory (TA).",
+   "Resolution Advisory (RA)."
+  ],
+  "reponse": "D",
+  "page": 47,
+  "image": null
+ },
+ {
+  "id": 225,
+  "question": "Below what altitude are all resolution advisories (RA) inhibited ?",
+  "choix": [
+   "Below 500 ft barometric altitude.",
+   "Below 500 ft radio altitude.",
+   "Below 1000 ft radio altitude.",
+   "Below 1000 ft barometric altitude."
+  ],
+  "reponse": "C",
+  "page": 47,
+  "image": null
+ },
+ {
+  "id": 226,
+  "question": "What does the \" TCAS RA F/0 \" advisory message indicate ?",
+  "choix": [
+   "TCAS is incapable of displaying RA vertical guidance on the Captain's PFD.",
+   "TCAS is incapable of displaying RA traffic symbols on the First Officer's ND.",
+   "TCAS is incapable of displaying RA traffic symbols on the Captain's ND.",
+   "TCAS is incapable of displaying RA vertical guidance on the First Officer's PFD."
+  ],
+  "reponse": "D",
+  "page": 47,
+  "image": null
+ },
+ {
+  "id": 227,
+  "question": "What is the purpose of airplane system STATUS messages ?",
+  "choix": [
+   "To alert the crew of impending system malfunctions.",
+   "To provide crew awareness of system faults that may affect airplane dispatch.",
+   "To inform the crew that a malfunction is about to occur.",
+   "STATUS messages are for use by maintenance personnel only."
+  ],
+  "reponse": "B",
+  "page": 47,
+  "image": null
+ },
+ {
+  "id": 228,
+  "question": "What is the level of urgency for a time critical warning ?",
+  "choix": [
+   "A time critical warning requires immediate crew awareness and may require that crew action be performed in a timely manner.",
+   "A time critical warning is a crew reminder of the current state of manually or automatically configured airplane systems.",
+   "A time critical warning requires crew awareness and may require that crew action be accomplished \" as time permits \".",
+   "A time critical warning requires immediate crew awareness and an immediate response and is usually associated with flight path control."
+  ],
+  "reponse": "D",
+  "page": 47,
+  "image": null
+ },
+ {
+  "id": 229,
+  "question": "What is indicated if an amber \" OFF SCALE \" message displays on a navigation display (ND) ?",
+  "choix": [
+   "TCAS has failed.",
+   "The ATC transponder is off.",
+   "TA is occuring at range greater than current ND range.",
+   "TCAS cannot display vertical guidance symbols on the ND."
+  ],
+  "reponse": "C",
+  "page": 47,
+  "image": null
+ },
+ {
+  "id": 230,
+  "question": "All TCAS alerts are inhibited by :",
+  "choix": [
+   "Windshear alerts.",
+   "EICAS caution messages.",
+   "System STATUS messages.",
+   "EICAS warning messages."
+  ],
+  "reponse": "A",
+  "page": 48,
+  "image": null
+ },
+ {
+  "id": 231,
+  "question": "After vacating runway 08R at CDG airport, you are cleared to cross runway 08L via taxiway S6. RAAS message will be :",
+  "choix": [
+   "\" Approaching runway 08L \".",
+   "\" Approaching runway 26R \".",
+   "\" On taxiway S6 \".",
+   "\" Too late \"."
+  ],
+  "reponse": "B",
+  "page": 48,
+  "image": null
+ },
+ {
+  "id": 232,
+  "question": "On final, PWS is available :",
+  "choix": [
+   "Below 1200 ft RA.",
+   "Below 1200 ft baro.",
+   "When LOC and G/S green.",
+   "When flaps 30°."
+  ],
+  "reponse": "A",
+  "page": 48,
+  "image": null
+ },
+ {
+  "id": 233,
+  "question": "Can TERRAIN data be displayed on ND in VOR mode ?",
+  "choix": [
+   "Yes.",
+   "NO."
+  ],
+  "reponse": "A",
+  "page": 48,
+  "image": null
+ },
+ {
+  "id": 234,
+  "question": "What is necessary to converse with the mechanic servicing the engines at the engine nacelle ?",
+  "choix": [
+   "Position the SERV INTPH switch to ON.",
+   "Position the Observer Audio Selector to Captain.",
+   "Use the CDU and line select Service Interphone.",
+   "You cannot speak with any of the ground crew except at the nose wheel well."
+  ],
+  "reponse": "A",
+  "page": 49,
+  "image": null
+ },
+ {
+  "id": 235,
+  "question": "What does illumination of the Offside Tuning Light mean ?",
+  "choix": [
+   "The selected VHF radio is inoperative.",
+   "You have a call from company.",
+   "One of the other radio tuning panels is tuning a radio normally tuned by this panel.",
+   "The microphone is keyed and transmitting on the selected frequency."
+  ],
+  "reponse": "C",
+  "page": 49,
+  "image": null
+ },
+ {
+  "id": 236,
+  "question": "What is indicated by a flight deck printer FAIL annunciation ?",
+  "choix": [
+   "The telephone handset has failed.",
+   "The flight deck printer is turned off.",
+   "The flight deck printer door is opened, the printer paper is jammed or the printer has failed.",
+   "The flight deck printer paper is failed."
+  ],
+  "reponse": "C",
+  "page": 49,
+  "image": null
+ },
+ {
+  "id": 237,
+  "question": "What does the SELCAL communication EICAS alert message indicate ?",
+  "choix": [
+   "The selective calling system has failed.",
+   "A VHF or HF selective call has been received and is waiting to be answered.",
+   "A cabin attendant is calling the flight deck.",
+   "An uplink has been received."
+  ],
+  "reponse": "B",
+  "page": 49,
+  "image": null
+ },
+ {
+  "id": 238,
+  "question": "What does the COMM communication EICAS alert message indicate when accompanied by a high-low chime ?",
+  "choix": [
+   "A medium priority uplink has been received and may be reviewed on the communications display.",
+   "A VHF or HF selective call has been received and is waiting to be answered.",
+   "A low priority uplink has been received and may be reviewed on the communications display.",
+   "ACARS has failed."
+  ],
+  "reponse": "A",
+  "page": 49,
+  "image": null
+ },
+ {
+  "id": 239,
+  "question": "What does an illuminated FLT Interphone CALL light on the audio control panel indicate ?",
+  "choix": [
+   "Another airplane is calling.",
+   "A ground crew technician is calling the flight deck.",
+   "Someone is calling the flight deck on VHF radio.",
+   "The FLT transmit switch is stuck in the ON position."
+  ],
+  "reponse": "B",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 240,
+  "question": "What happens if you push the CAB transmitter select switch twice within one second ?",
+  "choix": [
+   "Nothing. The second push cancels the selection.",
+   "A priority call is placed to a pre-selected cabin station.",
+   "A conference call is initiated with all cabin stations.",
+   "A pre-recorded message is sent to a pre-selected cabin station."
+  ],
+  "reponse": "B",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 241,
+  "question": "How do you proceed to remove squelch on VHF when out of range ?",
+  "choix": [
+   "Push and hold VHF selected switch on RTP.",
+   "Push and hold transmitter switch on ACP.",
+   "It is impossible."
+  ],
+  "reponse": "A",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 242,
+  "question": "When is CVR automatically switched on ?",
+  "choix": [
+   "Everytime.",
+   "From first engine start to 5 mn after last engine shutdown.",
+   "When parking brake is released.",
+   "When cockpit door is locked."
+  ],
+  "reponse": "B",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 243,
+  "question": "On B777F, the flight crew disconnected the CGO interphone system from the CABIN interphone system by pushing the CARGO AUDIO switch. To call the cargo area, the flight crew has to :",
+  "choix": [
+   "Reconnect the CGO interphone before calling by pushing again on the same switch.",
+   "Only call the CGO area, the reconnection being automatic."
+  ],
+  "reponse": "B",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 244,
+  "question": "During main deck loading, the captain may communicate with the loading crew using :",
+  "choix": [
+   "The cargo interphone system.",
+   "The public adress (PA) system.",
+   "Both answers are true."
+  ],
+  "reponse": "A",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 245,
+  "question": "From main deck cargo compartment, to call the flight deck :",
+  "choix": [
+   "The INTERCOM system speakers and microphones may be used.",
+   "The Loadmaster Amplifier Panel handset may be used.",
+   "Both answers are true."
+  ],
+  "reponse": "B",
+  "page": 50,
+  "image": null
+ },
+ {
+  "id": 246,
+  "question": "What does the Pitch Limit Indicator indicate ?",
+  "choix": [
+   "Pitch angle for best climb speed.",
+   "Pitch at which underspeed will sound.",
+   "Pitch limit at which stick shaker will occur.",
+   "Proper pitch angle for takeoff."
+  ],
+  "reponse": "C",
+  "page": 51,
+  "image": null
+ },
+ {
+  "id": 247,
+  "question": "When is the Pitch Limit Indication displayed ?",
+  "choix": [
+   "When flaps are not up or at slows speeds with the flaps up.",
+   "Only when the flaps are NOT in the up position.",
+   "If airspeed is close to maximum.",
+   "After takeoff until passing 1000 ft."
+  ],
+  "reponse": "A",
+  "page": 51,
+  "image": null
+ },
+ {
+  "id": 248,
+  "question": "When is the landing altitude flag removed ?",
+  "choix": [
+   "After landing altitude is set on the pressurization panel.",
+   "After the original airfield is entered on CDU route page.",
+   "After correct local altimeter is set.",
+   "Only after take-off."
+  ],
+  "reponse": "B",
+  "page": 51,
+  "image": null
+ },
+ {
+  "id": 249,
+  "question": "When does a \" localizer not captured \" alert occur ?",
+  "choix": [
+   "At greater than 2 dots deviation.",
+   "Above 1000 ft radio altitude.",
+   "Localizer not captured and below 1000 ft RA.",
+   "Only after a glideslope deviation alert."
+  ],
+  "reponse": "C",
+  "page": 51,
+  "image": null
+ },
+ {
+  "id": 250,
+  "question": "What does the POS map switch display ?",
+  "choix": [
+   "ADIRU, GPS and raw VOR position data.",
+   "Latitude/Longitude data for all waypoints.",
+   "FMC present position data.",
+   "Waypoint ETA and altitude."
+  ],
+  "reponse": "A",
+  "page": 51,
+  "image": null
+ },
+ {
+  "id": 251,
+  "question": "What does the nose of the airplane symbol in Plan Mode represent ?",
+  "choix": [
+   "Present heading.",
+   "Present position.",
+   "Active waypoint.",
+   "A big investment."
+  ],
+  "reponse": "B",
+  "page": 51,
+  "image": null
+ },
+ {
+  "id": 252,
+  "question": "When is the Heading Reference Light illuminated ?",
+  "choix": [
+   "Any time true heading is in use.",
+   "Whenever the Heading Reference switch is in the TRUE position.",
+   "Above 82° N/S latitude or in the vicinities of the magnetic poles.",
+   "After a correct answer is given."
+  ],
+  "reponse": "B",
+  "page": 52,
+  "image": null
+ },
+ {
+  "id": 253,
+  "question": "When are the annunciation's, CDU L, C, R, displayed on the ND ?",
+  "choix": [
+   "Navigation source switch in CDU.",
+   "Only after a single FMC failure.",
+   "After dual FMC failures.",
+   "Navigation source switch in CDU and after dual FMC failures."
+  ],
+  "reponse": "D",
+  "page": 52,
+  "image": null
+ },
+ {
+  "id": 254,
+  "question": "Which statement about the Standby Attitude Indicator is true for 777-200 ?",
+  "choix": [
+   "It displays roll and bank only.",
+   "It displays pitch, bank and slip.",
+   "It displays pitch and bank only.",
+   "It displays pitch, bank and heading."
+  ],
+  "reponse": "C",
+  "page": 52,
+  "image": null
+ },
+ {
+  "id": 255,
+  "question": "What does a square icon next to an EICAS message indicate ?",
+  "choix": [
+   "The non-normal condition is no longer present.",
+   "There is no electronic checklist associated with this message.",
+   "There is an electronic checklist associated with this message and the checklist is complete.",
+   "There is an electronic checklist associated with this message and the checklist is NOT complete."
+  ],
+  "reponse": "D",
+  "page": 52,
+  "image": null
+ },
+ {
+  "id": 256,
+  "question": "What does cyan color indicate on the Electronic Checklist ?",
+  "choix": [
+   "The step must be reset.",
+   "The step must be repeated.",
+   "Do not perform the step.",
+   "The step was performed wrong."
+  ],
+  "reponse": "C",
+  "page": 52,
+  "image": null
+ },
+ {
+  "id": 257,
+  "question": "Which statement about the non-normal checklist queue is true ?",
+  "choix": [
+   "Each checklist in the queue must be completed in the order listed.",
+   "The checklist queue allows you to select which checklist to perform next.",
+   "While the queue is displaying, it continuously updates automatically each time a new EICAS message appears.",
+   "The queue displays checklists for messages that do not have an icon."
+  ],
+  "reponse": "B",
+  "page": 52,
+  "image": null
+ },
+ {
+  "id": 258,
+  "question": "How do you display an unannunciated non-normal checklist ?",
+  "choix": [
+   "Highlight and select the NON-NORMAL MENU key then select the UNANNUNCIATED CHECKLISTS key.",
+   "Highlight and select the NORMAL MENU key then select the UNANNUNCIATED CHECKLISTS key.",
+   "Highlight and select the CHKL RESETS key then select the UNANNUNCIATED CHECKLISTS key."
+  ],
+  "reponse": "A",
+  "page": 53,
+  "image": null
+ },
+ {
+  "id": 259,
+  "question": "What does the NOTES key do ?",
+  "choix": [
+   "The NOTES key resets the operational notes collected from non-normal checklists during flight.",
+   "The NOTES key displays the operational notes collected from non-normal checklists during flight.",
+   "The NOTES key allows you to create a note for the displayed checklist.",
+   "The NOTES key adds the displayed checklist to the notes queue."
+  ],
+  "reponse": "B",
+  "page": 53,
+  "image": null
+ },
+ {
+  "id": 260,
+  "question": "Which statement about resets is true ?",
+  "choix": [
+   "The CHKL RESET key resets all of the normal checklists.",
+   "The CHKL RESET key resets all of the non-normal checklists.",
+   "Resets displayed checklist.",
+   "All checklists can be reset at once by using the NON-NORMAL MENU key followed by the CHKL RESET key."
+  ],
+  "reponse": "C",
+  "page": 53,
+  "image": null
+ },
+ {
+  "id": 261,
+  "question": "What does the CHKL OVRD key do when selected ?",
+  "choix": [
+   "Overrides the highlighted item on the checklist.",
+   "Overrides the displayed checklist.",
+   "Displays the next checklist to be overridden.",
+   "Displays the last overridden checklist."
+  ],
+  "reponse": "B",
+  "page": 53,
+  "image": null
+ },
+ {
+  "id": 262,
+  "question": "What are the steps to select Status on the Left inboard display unit ?",
+  "choix": [
+   "Select STAT switch, then select L INDB switch.",
+   "Select LWR CTR switch, then select STAT switch.",
+   "Select L INBD switch, then select STAT switch.",
+   "Select R INBD switch, then select ENG switch."
+  ],
+  "reponse": "C",
+  "page": 53,
+  "image": null
+ },
+ {
+  "id": 263,
+  "question": "What are the steps to select The Flight Control Synoptic on the Right inboard display unit ?",
+  "choix": [
+   "Select R INBD switch, then select FCTL switch.",
+   "Select LWR CTR switch, then select FCTL switch.",
+   "Select FCTL switch, then select R INBD switch.",
+   "Select R INBD switch, then select DOOR switch."
+  ],
+  "reponse": "A",
+  "page": 53,
+  "image": null
+ },
+ {
+  "id": 264,
+  "question": "Which statement about the electronic checklist NORMAL AND NON-NORMAL keys is true ?",
+  "choix": [
+   "The NON-NORMAL key displays a list of the normal checklists.",
+   "The NON-NORMAL key displays the last checklist completed.",
+   "The NORMAL key displays the next normal checklist in the sequence.",
+   "The NORMAL key displays the last normal checklist in the sequence."
+  ],
+  "reponse": "C",
+  "page": 54,
+  "image": null
+ },
+ {
+  "id": 265,
+  "question": "Which statement about the ADIRU is true ?",
+  "choix": [
+   "The inertial reference position is updated using information from the air data modules.",
+   "The ADIRU sends magnetic variation data to the FMCs to convert true heading to magnetic heading.",
+   "The ADIRU receives the same data inputs as the SAARU but compares and validates the data independently.",
+   "If the ADIRU fails, the PFDs blank."
+  ],
+  "reponse": "C",
+  "page": 55,
+  "image": null
+ },
+ {
+  "id": 266,
+  "question": "What happens if the ADIRU switch is left on and then primary power is removed from the airplane and the battery switch is turned off ?",
+  "choix": [
+   "The ON BAT light illuminates and the EICAS memo message ADIRU ON BAT displays.",
+   "The ON BAT light illuminates and the horn in the landing gear wheel well sounds.",
+   "The ON BAT light extinguishes when the battery switch is turned off.",
+   "Nothing. The ADIRU switch is always left on when securing the airplane."
+  ],
+  "reponse": "B",
+  "page": 55,
+  "image": null
+ },
+ {
+  "id": 267,
+  "question": "Which statement is true if the ADIRU fails ?",
+  "choix": [
+   "LNAV guidance is available.",
+   "The SAARU provides airspeed, attitude, altitude and vertical speed data.",
+   "The SAARU provides information to the standby flight instruments.",
+   "The SAARU provides airspeed, attitude, altitude and vertical speed data and the SAARU provides information to the standby flight instruments."
+  ],
+  "reponse": "B",
+  "page": 55,
+  "image": null
+ },
+ {
+  "id": 268,
+  "question": "What is the data source for the standby attitude indicator ?",
+  "choix": [
+   "ADIRU.",
+   "SAARU.",
+   "FMC.",
+   "Either ADIRU or SAARU."
+  ],
+  "reponse": "B",
+  "page": 55,
+  "image": null
+ },
+ {
+  "id": 269,
+  "question": "Which message is displayed when the ADIRU is in the alignment mode ?",
+  "choix": [
+   "EICAS memo message ADIRU ALIGN MODE.",
+   "EICAS alert message NAV ADIRU INERTIAL.",
+   "CDU scratchpad message ADIRU ALIGN.",
+   "CDU scratchpad message ENTER ADIRU POSITION."
+  ],
+  "reponse": "A",
+  "page": 55,
+  "image": null
+ },
+ {
+  "id": 270,
+  "question": "How often is a complete ADIRU alignment recommended ?",
+  "choix": [
+   "Every 15 hours.",
+   "Every 24 hours.",
+   "Whenever the total time in the navigation mode is expected to exceed 15 hours.",
+   "Whenever the total time in the navigation mode is expected to exceed 24 hours."
+  ],
+  "reponse": "D",
+  "page": 56,
+  "image": null
+ },
+ {
+  "id": 271,
+  "question": "How long should the ADIRU switch remain off when manually realigning the ADIRU ?",
+  "choix": [
+   "Momentarily.",
+   "24 seconds.",
+   "30 seconds.",
+   "1 minute."
+  ],
+  "reponse": "C",
+  "page": 56,
+  "image": null
+ },
+ {
+  "id": 272,
+  "question": "Which of the following are data sources for the ADIRU ?",
+  "choix": [
+   "Air data modules only.",
+   "Static ports only.",
+   "Air data modules, AOA sensors, and TAT probe.",
+   "AOA sensors and TAT probe only."
+  ],
+  "reponse": "C",
+  "page": 56,
+  "image": null
+ },
+ {
+  "id": 273,
+  "question": "Which of the following are data sources for the SAARU ?",
+  "choix": [
+   "Air data modules only.",
+   "Static ports only.",
+   "Air data modules, AOA sensors, and TAT probe.",
+   "AOA sensors and TAT probe only."
+  ],
+  "reponse": "C",
+  "page": 56,
+  "image": null
+ },
+ {
+  "id": 274,
+  "question": "What is the altitude source for transponder altitude reporting when the ALT SOURCE selector is in the NORM position ?",
+  "choix": [
+   "ADIRU.",
+   "SAARU.",
+   "Air Data Modules.",
+   "Either ADIRU or SAARU."
+  ],
+  "reponse": "A",
+  "page": 56,
+  "image": null
+ },
+ {
+  "id": 275,
+  "question": "What is the altitude source for transponder altitude reporting when the ALT SOURCE selector is in the ALTN position ?",
+  "choix": [
+   "ADIRU.",
+   "SAARU.",
+   "Air Data Modules.",
+   "ADIRU and SAARU."
+  ],
+  "reponse": "B",
+  "page": 56,
+  "image": null
+ },
+ {
+  "id": 276,
+  "question": "Which one of the following is inoperative with dual FMC failure ?",
+  "choix": [
+   "LN AV.",
+   "VNAV.",
+   "MAP display.",
+   "Both CDUs."
+  ],
+  "reponse": "B",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 277,
+  "question": "What is represented by the color magenta in weather radar returns ?",
+  "choix": [
+   "Moderate precipitation.",
+   "Heavy precipitation.",
+   "Turbulence within precipitation.",
+   "Clear air turbulence."
+  ],
+  "reponse": "C",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 278,
+  "question": "Which one of the following pages is available following dual FMC failure ?",
+  "choix": [
+   "ALTN PERF INIT.",
+   "ALTN REF NAV DATA.",
+   "ALTN POS REF.",
+   "ALTN NAV LEGS."
+  ],
+  "reponse": "D",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 279,
+  "question": "What color are the VORs on the NAV RADIO page ?",
+  "choix": [
+   "Magenta.",
+   "Cyan.",
+   "Green.",
+   "White."
+  ],
+  "reponse": "C",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 280,
+  "question": "When is ILS tuning commanded by the FMC ?",
+  "choix": [
+   "Before or after the ILS approach is entered into the route.",
+   "Immediately after takeoff if an ILS approach is reselected.",
+   "Except during touch-and-go landings.",
+   "On ground only."
+  ],
+  "reponse": "B",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 281,
+  "question": "What VNAV statement is correct just after lift off with an engine failure ?",
+  "choix": [
+   "VNAV is inoperative.",
+   "VNAV commands airspeed from V2 +15 to V2 +35.",
+   "The FMC EO CLB appears if the VNAV function key is pushed.",
+   "The VREF + 80 CLB page appears if the VNAV function key is pushed."
+  ],
+  "reponse": "D",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 282,
+  "question": "Which of the following statements is true ?",
+  "choix": [
+   "Dashes indicate data entry is optional.",
+   "ERASE is used to delete data in a single line.",
+   "Page titles are magenta when active.",
+   "The RTE page title is white when inactive."
+  ],
+  "reponse": "A",
+  "page": 57,
+  "image": null
+ },
+ {
+  "id": 283,
+  "question": "Which of the following ND modes can not display weather radar returns ?",
+  "choix": [
+   "APP centered.",
+   "APP expanded.",
+   "VOR expanded.",
+   "MAP centered."
+  ],
+  "reponse": "A",
+  "page": 58,
+  "image": null
+ },
+ {
+  "id": 284,
+  "question": "What is the maximum range at which turbulence returns can be displayed ?",
+  "choix": [
+   "10 NM.",
+   "20 NM.",
+   "40 NM.",
+   "80 NM."
+  ],
+  "reponse": "C",
+  "page": 58,
+  "image": null
+ },
+ {
+  "id": 285,
+  "question": "What is the attitude data source on B777-300 for the ISFD ?",
+  "choix": [
+   "ADIRU.",
+   "SAARU.",
+   "CPDLC.",
+   "Internal inertial sensors."
+  ],
+  "reponse": "D",
+  "page": 58,
+  "image": null
+ },
+ {
+  "id": 286,
+  "question": "What happens if ADIRU switch is set to OFF position in flight ?",
+  "choix": [
+   "Nothing.",
+   "Attitude and aerodynamic informations are lost.",
+   "SAARU provides standby informations.",
+   "Captain informations are lost."
+  ],
+  "reponse": "A",
+  "page": 58,
+  "image": null
+ },
+ {
+  "id": 287,
+  "question": "Is your bank angle limited to 20° when LNAV is engaged and the BANK LIMIT selector is set to the 20° position ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "B",
+  "page": 59,
+  "image": null
+ },
+ {
+  "id": 288,
+  "question": "Is your bank angle limited to 15° when TRK SEL mode is engaged and the BANK LIMIT selector is set to the 15° position ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "A",
+  "page": 59,
+  "image": null
+ },
+ {
+  "id": 289,
+  "question": "When is Go-Around armed ?",
+  "choix": [
+   "When flaps are up.",
+   "When below 1500 feet RA.",
+   "When flaps are extended and when G/S is captured.",
+   "When flaps are extended or when G/S is captured."
+  ],
+  "reponse": "D",
+  "page": 59,
+  "image": null
+ },
+ {
+  "id": 290,
+  "question": "What does the \" AUTOPILOT \" caution message mean when an amber line is drawn through the pitch mode on the FMA ?",
+  "choix": [
+   "The engaged autopilot has failed.",
+   "The pitch mode has failed and the autopilot is continuing to operate.",
+   "The pitch mode has failed and the autopilot is disconnected."
+  ],
+  "reponse": "B",
+  "page": 59,
+  "image": null
+ },
+ {
+  "id": 291,
+  "question": "What does the \" NO LAND 3 \" advisory message mean when FLARE and ROLLOUT armed are displayed on the FMA ?",
+  "choix": [
+   "The autoland system is inoperative.",
+   "The autopilot is inoperative, manual landing is required.",
+   "The autoland system does not have redundancy for triple channel autoland.",
+   "NO LAND 3 means you are more than 3 miles from land."
+  ],
+  "reponse": "C",
+  "page": 59,
+  "image": null
+ },
+ {
+  "id": 292,
+  "question": "What position should the Autopilot DISENGAGE Bar be in during, the MCP preflight ?",
+  "choix": [
+   "UP to the engaged position.",
+   "DOWN to the disengaged position.",
+   "Down to the engaged position.",
+   "None of the above."
+  ],
+  "reponse": "A",
+  "page": 59,
+  "image": null
+ },
+ {
+  "id": 293,
+  "question": "What is the sequence of steps to use FLCH to climb to FL 250 at 280 kt ?",
+  "choix": [
+   "Set 280 kt in the IAS/Mach window, push FLCH selector, then set FL 250 in the altitude window.",
+   "Set FL 280 in the altitude window, push FLCH selector, then set 250 kt in the IAS/Mach window.",
+   "Push FLCH selector, set FL 250 in the altitude window, then set 280 kt in the IAS/Mach window.",
+   "Set FL 250 in the altitude window, push FLCH selector, then set 280 kt in the IAS/Mach window."
+  ],
+  "reponse": "D",
+  "page": 60,
+  "image": null
+ },
+ {
+  "id": 294,
+  "question": "What is the sequence of steps to reduce airspeed with VNAV engaged, using speed intervention ?",
+  "choix": [
+   "Change the IAS/MACH window to the lower airspeed, then push the IAS/MACH Selector.",
+   "Change the IAS/MACH window to the lower airspeed then push FLCH.",
+   "Push the IAS/MACH Selector, then change the IAS/MACH Window to the lower airspeed.",
+   "Push FLCH then change the IAS/MACH Window to the lower airspeed."
+  ],
+  "reponse": "C",
+  "page": 60,
+  "image": null
+ },
+ {
+  "id": 295,
+  "question": "With TRK SEL engaged, what is the CORRECT sequence of steps to turn right to heading 150 degrees using the HDG SEL mode ?",
+  "choix": [
+   "Push the HDG/TRK Reference switch, verify HDG SEL on the FMA, then rotate the HDG/TRK Reference switch to the right to set 150 in the HDG/TRK Window.",
+   "Rotate the HDG/TRK Référence switch to the right to set 150 in the HDG/TRK Window, then push the HDG/TRK Reference switch.",
+   "Verify TRK SEL on the FMA, then rotate the HDG/TRK Référence switch to the Left to set 150 in the HDG/TRK Window.",
+   "Push the LNAV Reference switch. verify LNAV on the FMA, then rotate the HDG/TRK Référence switch to the right to set 150 in the HDG/TRK Window."
+  ],
+  "reponse": "A",
+  "page": 60,
+  "image": null
+ },
+ {
+  "id": 296,
+  "question": "Which switch engages the autothrottle with the A/T ARM Switches in ARM ?",
+  "choix": [
+   "CLB CON switch.",
+   "A/T switch.",
+   "LNAV switch.",
+   "APP switch."
+  ],
+  "reponse": "B",
+  "page": 60,
+  "image": null
+ },
+ {
+  "id": 297,
+  "question": "In the VS mode, what are the correct steps to make a 2.6° FPA descent ?",
+  "choix": [
+   "Push VS/FPA Reference switch, Set new altitude, Push VS/FPA switch, Set 2.6 flight path angle.",
+   "Push VS/FPA switch, Set 2. 6 degree flight path angle, Set new altitude.",
+   "Set new altitude, Push VS/FPA switch, Set 2. 6 degree flight path angle.",
+   "Push VS/FPA switch only."
+  ],
+  "reponse": "A",
+  "page": 60,
+  "image": null
+ },
+ {
+  "id": 298,
+  "question": "What action resets the autopilot system, warning system and cancels the \" AUTOPILOT DISC \" message ?",
+  "choix": [
+   "Pushing the Autopilot Disconnect switch a second time.",
+   "Pushing the Cancel/Recall switch a second time.",
+   "Pushing the Master Warning switch when the light is illuminated.",
+   "Pushing the Cancel switch below Master Warning switch."
+  ],
+  "reponse": "A",
+  "page": 61,
+  "image": null
+ },
+ {
+  "id": 299,
+  "question": "Which A/T ARM switch configuration causes the \" AUTOTHROTTLE R \" message to display ?",
+  "choix": [
+   "Left switch OFF Right switch ON.",
+   "Left switch ON Right switch OFF.",
+   "Left switch ON Right switch ON.",
+   "Left switch OFF Right switch OFF."
+  ],
+  "reponse": "B",
+  "page": 61,
+  "image": null
+ },
+ {
+  "id": 300,
+  "question": "What will a second push of the TO/GA switch do during the takeoff above 80 knots, with LNAV and VNAV armed ?",
+  "choix": [
+   "Engages LNAV and VNAV.",
+   "Disarms LNAV and engages VNAV.",
+   "Engages LNAV and disarms VNAV.",
+   "Disarms LNAV and VNAV."
+  ],
+  "reponse": "D",
+  "page": 61,
+  "image": null
+ },
+ {
+  "id": 301,
+  "question": "What will the autopilot do if you override the control column ?",
+  "choix": [
+   "Engage in HDG HOLD and V/S.",
+   "Engage in TRK HOLD and FPA.",
+   "Disengage.",
+   "Cause both roll and pitch modes to fail."
+  ],
+  "reponse": "C",
+  "page": 61,
+  "image": null
+ },
+ {
+  "id": 302,
+  "question": "What will the autopilot do if the last active waypoint is passed with LNAV engaged ?",
+  "choix": [
+   "LNAV will disengage.",
+   "The autopilot will turn the airplane toward the destination airport.",
+   "LNAV will maintain current heading.",
+   "HDG HOLD will engage."
+  ],
+  "reponse": "C",
+  "page": 61,
+  "image": null
+ },
+ {
+  "id": 303,
+  "question": "Above what altitude can you disengage the APP mode by Pushing the APP switch a second time ?",
+  "choix": [
+   "500 ft RA.",
+   "1000 ft RA.",
+   "1500 ft RA.",
+   "2500 ft RA."
+  ],
+  "reponse": "C",
+  "page": 61,
+  "image": null
+ },
+ {
+  "id": 304,
+  "question": "During Go-Around with the second push of either TO/GA switch :",
+  "choix": [
+   "The Autothrottle engages in Thrust reference mode for full Go-Around thrust.",
+   "The Autothrottle engages in Thrust reference mode with Climb mode.",
+   "The Autothrottle engages in Thrust reference mode for 2000 ft per minute climb."
+  ],
+  "reponse": "B",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 305,
+  "question": "Above 400 ft, how could you leave Go-Around mode :",
+  "choix": [
+   "With a second push of either TO/GA switch.",
+   "Selecting a different MCP pitch or roll mode.",
+   "By connecting or disconnecting Autopilot."
+  ],
+  "reponse": "B",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 306,
+  "question": "Autopilot keeps the airplane on Localizer centerline in Roll out mode using :",
+  "choix": [
+   "Nose Wheel Steering only.",
+   "Rudder only.",
+   "Nose Wheel Steering and Rudder."
+  ],
+  "reponse": "C",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 307,
+  "question": "When is Flare mode armed :",
+  "choix": [
+   "When Land 3 or Land 2 is annunciated on PFD.",
+   "When Flaps are not in up position.",
+   "Below 2000 ft RA."
+  ],
+  "reponse": "A",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 308,
+  "question": "TO/GA switches are inhibited :",
+  "choix": [
+   "When no Autoland EICAS message appears.",
+   "After Radio Altitude decreases through 10 ft on Landing.",
+   "After Radio Altitude decreases through 2 ft on Landing."
+  ],
+  "reponse": "C",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 309,
+  "question": "On ground, the first FD switch positioned ON arms the FD :",
+  "choix": [
+   "In HDG/HOLD and V/S modes.",
+   "In TO/GA roll and pitch modes.",
+   "In HDG/HOLD and ATT modes."
+  ],
+  "reponse": "B",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 310,
+  "question": "CLB/CON Thrust switch :",
+  "choix": [
+   "Is operative on ground.",
+   "Is inoperative below 400 ft during Take Off.",
+   "When pushed, changes thrust limit to maximum.",
+   "The three others answers are correct."
+  ],
+  "reponse": "B",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 311,
+  "question": "L-NAV engages if the airplane is :",
+  "choix": [
+   "Within 4,5 NM of the active leg.",
+   "Within 2,5 NM of the active leg.",
+   "On an intercept heading to the active leg within 4 NM of the active leg."
+  ],
+  "reponse": "B",
+  "page": 62,
+  "image": null
+ },
+ {
+  "id": 312,
+  "question": "After Take-Off, FD bars command a pitch attitude to maintain :",
+  "choix": [
+   "Pitch 18°.",
+   "Speed between V2+15 and V2+25 with two engines operating.",
+   "Speed between V2 and V2+10 with two engines operating."
+  ],
+  "reponse": "B",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 313,
+  "question": "When pushing on VNAV push button :",
+  "choix": [
+   "IAS window becomes black.",
+   "VNAV mode is following previous selected speed.",
+   "VNAV mode engages with a speed in compliance with Flaps position."
+  ],
+  "reponse": "A",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 314,
+  "question": "It is possible to Take-Off :",
+  "choix": [
+   "With only LNAV mode \" armed \".",
+   "With only VNAV mode \" armed \".",
+   "With both LNAV and VNAV modes \" armed \".",
+   "The three others answers are corrects."
+  ],
+  "reponse": "D",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 315,
+  "question": "During Take-Off, when does Autothrottle stay in Hold position ?",
+  "choix": [
+   "At 80 kt.",
+   "At 100 kt.",
+   "When Take-off thrust is reached."
+  ],
+  "reponse": "A",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 316,
+  "question": "One engine fails during take-off after V2. Target speed is :",
+  "choix": [
+   "V2.",
+   "V2 + 10.",
+   "V2 + 15.",
+   "Actual speed between V2 and V2 + 15."
+  ],
+  "reponse": "D",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 317,
+  "question": "Go around mode is available when :",
+  "choix": [
+   "Flaps down or G/S captured.",
+   "Below 1500 ft RA.",
+   "Gear down.",
+   "Below 2000 ft alti."
+  ],
+  "reponse": "A",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 318,
+  "question": "Can you make a LNAV/VNAV approach if the airport is not WGS 84 ?",
+  "choix": [
+   "No.",
+   "Yes, if a raw data procedure exists."
+  ],
+  "reponse": "B",
+  "page": 63,
+  "image": null
+ },
+ {
+  "id": 319,
+  "question": "On ILS approach with LOC and G/S captured, can you revert to default roll and pitch mode ?",
+  "choix": [
+   "No, it is impossible.",
+   "Yes, if above 1500 ft."
+  ],
+  "reponse": "B",
+  "page": 64,
+  "image": null
+ },
+ {
+  "id": 320,
+  "question": "With VNAV SPD displayed on FMA, which A/T mode can you have ?",
+  "choix": [
+   "THR - THR REF - IDLE - HOLD.",
+   "TO/GA - IDLE - HOLD.",
+   "THR - RETARD - HOLD.",
+   "THR - THR REF - HOLD - SPD."
+  ],
+  "reponse": "A",
+  "page": 64,
+  "image": null
+ },
+ {
+  "id": 321,
+  "question": "If the LOC index flashes on low final with A/P or F/D engaged ?",
+  "choix": [
+   "ILS transmitter has failed.",
+   "Excessive deviation occurs.",
+   "ILS receiver has failed.",
+   "RA has failed."
+  ],
+  "reponse": "B",
+  "page": 64,
+  "image": null
+ },
+ {
+  "id": 322,
+  "question": "MEL : The Hold item time limitation category B is :",
+  "choix": [
+   "48 hours.",
+   "3 days.",
+   "10 days.",
+   "15 days."
+  ],
+  "reponse": "B",
+  "page": 65,
+  "image": null
+ },
+ {
+  "id": 323,
+  "question": "777-300 what is the average climb gradient to 10 000 ft AAL, NADP2, 300 tons, ISA +10°C ?",
+  "choix": [
+   "5,9",
+   "9,3",
+   "9,9"
+  ],
+  "reponse": "B",
+  "page": 65,
+  "image": null
+ },
+ {
+  "id": 324,
+  "question": "During cruise, to select MAXI RANGE, you must :",
+  "choix": [
+   "Enter a CI = 0 on PERF INIT page.",
+   "Manually enter M .80 in V NAV page.",
+   "Select ECON SPD line on V NAV DESC page.",
+   "Select MAXI RNGE SPD line on V NAV page."
+  ],
+  "reponse": "A",
+  "page": 65,
+  "image": null
+ },
+ {
+  "id": 325,
+  "question": "Maximum certified passenger number is :",
+  "choix": [
+   "290 for B777-200 and 350 for B777-300.",
+   "350 for B777-200 and 450 for B777-300.",
+   "400 for B777-200 and 500 for B777-300.",
+   "440 for B777-200 and 550 for B777-300."
+  ],
+  "reponse": "D",
+  "page": 65,
+  "image": null
+ },
+ {
+  "id": 326,
+  "question": "CAT 3 approach can be performed in LAND 2 and LAND 3 :",
+  "choix": [
+   "True.",
+   "False."
+  ],
+  "reponse": "A",
+  "page": 65,
+  "image": null
+ },
+ {
+  "id": 327,
+  "question": "Placard speed Flaps 20 is :",
+  "choix": [
+   "170 kts for B777-200 and 195 kts for B777-300 and 777F.",
+   "185 kts for B777-200 and 195 kts for B777-300 and 777F.",
+   "195 kts for B777-200 and 225 kts for B777-300 and 777F.",
+   "215 kts for B777-200 and 235 kts for B777-300 and 777F."
+  ],
+  "reponse": "C",
+  "page": 65,
+  "image": null
+ },
+ {
+  "id": 328,
+  "question": "Maximum wind to open entry and cargo door is :",
+  "choix": [
+   "65 kt.",
+   "45 kt.",
+   "40 kt.",
+   "38 kt"
+  ],
+  "reponse": "C",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 329,
+  "question": "Landing on a contamined runway with braking action good, covered with 15 cm of dry snow is allowed without restriction :",
+  "choix": [
+   "True.",
+   "False.",
+   "It depends if reversers are operative or not."
+  ],
+  "reponse": "B",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 330,
+  "question": "Maximum crosswind for landing :",
+  "choix": [
+   "25 kt.",
+   "35 kt.",
+   "38 kt.",
+   "45 kt."
+  ],
+  "reponse": "D",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 331,
+  "question": "Maximum crosswind at take-off 1250 tons on a dry runway at take-off AFT limit center of gravity :",
+  "choix": [
+   "40 kt.",
+   "25 kt.",
+   "29 kt."
+  ],
+  "reponse": "C",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 332,
+  "question": "Maximum crosswind for automatic landing :",
+  "choix": [
+   "15 kt.",
+   "25 kt.",
+   "30 kt.",
+   "20 kt."
+  ],
+  "reponse": "B",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 333,
+  "question": "Maximum headwind for automatic landing :",
+  "choix": [
+   "No limitation.",
+   "40 kt.",
+   "15 kt.",
+   "25 kt."
+  ],
+  "reponse": "D",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 334,
+  "question": "Maximum fuel imbalance during taxiing, take-off and landing (for a B777-200ER) :",
+  "choix": [
+   "FUEL IMBALANCE message EICAS not displayed.",
+   "1000 kg.",
+   "No limitation.",
+   "TAXI not allowed."
+  ],
+  "reponse": "D",
+  "page": 66,
+  "image": null
+ },
+ {
+  "id": 335,
+  "question": "It is forbidden to engage autopilot after take off :",
+  "choix": [
+   "Below 1000 ft.",
+   "Below 500 ft.",
+   "Below 200 ft."
+  ],
+  "reponse": "C",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 336,
+  "question": "VMO/MMO for B777-200 :",
+  "choix": [
+   "340 kt/M 0.85",
+   "330 kt/M 0.87",
+   "340 kt/M 0.87",
+   "320 kt/M 0.86"
+  ],
+  "reponse": "B",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 337,
+  "question": "VMO/MMO for B777-300 and 777F :",
+  "choix": [
+   "330 kt EAS/M 0.89",
+   "330 kt EAS/M 0.87",
+   "330 kt/M 0.87"
+  ],
+  "reponse": "A",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 338,
+  "question": "Maximum flight altitude :",
+  "choix": [
+   "40 100 ft.",
+   "41 100 ft.",
+   "42 100 ft.",
+   "43 100 ft."
+  ],
+  "reponse": "D",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 339,
+  "question": "Maximum crosswind for landing at 250 tons on contamined runway with 5 mm of slush :",
+  "choix": [
+   "38 kt.",
+   "38 kt gusts included.",
+   "15 kt.",
+   "20 kt."
+  ],
+  "reponse": "D",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 340,
+  "question": "Automatic landing can be performed only with flaps 30° :",
+  "choix": [
+   "True.",
+   "False."
+  ],
+  "reponse": "B",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 341,
+  "question": "When the runway is wet, take-off limitations allow :",
+  "choix": [
+   "35 ft height above the end of runway.",
+   "50 ft height above the end of runway.",
+   "15 ft height above the end of runway."
+  ],
+  "reponse": "C",
+  "page": 67,
+  "image": null
+ },
+ {
+  "id": 342,
+  "question": "What is the turbulent air penetration speed in severe turbulence FL200 ?",
+  "choix": [
+   "280 kt.",
+   "270 kt.",
+   "M0,82."
+  ],
+  "reponse": "B",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 343,
+  "question": "Maximun landing weight is :",
+  "choix": [
+   "208,6 tons for B777-200 and 251,3 tons for B777-300.",
+   "208,6 tons for B777-200 and 308,6 tons for B777-300.",
+   "250 tons for B777-200 and 258 tons for B777-300."
+  ],
+  "reponse": "A",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 344,
+  "question": "Is the 777 F-GSPC AIMS 1 BP 2006 able to perform RNP approach with VNAV MINIMA ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "B",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 345,
+  "question": "Minimum oil quantity for a flight above 4 hours is :",
+  "choix": [
+   "20 Qt EICAS.",
+   "22 Qt EICAS.",
+   "22 Qt EICAS and ground check."
+  ],
+  "reponse": "A",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 346,
+  "question": "During preflight check for a flight to JFK, after setting, you read 390 ft on PFDs and 490 ft on stanby altimeter. Is departure allowed ?",
+  "choix": [
+   "Yes.",
+   "No."
+  ],
+  "reponse": "A",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 347,
+  "question": "During take-off and landing, is use of OFCR seats allowed ?",
+  "choix": [
+   "No.",
+   "Yes, only by flight operating crew.",
+   "Yes, only by technical crew, after evacuation information.",
+   "Yes, only by company ID passengers."
+  ],
+  "reponse": "C",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 348,
+  "question": "Minimum oxygen quantity at 21°C for a flight on B777-200 with 3 technical crew and 300 pax ?",
+  "choix": [
+   "1000 psi - 1000 psi.",
+   "705 psi - 710 psi.",
+   "680 psi - 1275 psi."
+  ],
+  "reponse": "C",
+  "page": 68,
+  "image": null
+ },
+ {
+  "id": 349,
+  "question": "Minimum oxygen quantity at 21°C for a flight on B777-300ER with 3 technical crew, 450 pax ?",
+  "choix": [
+   "870 psi - 1090 psi.",
+   "1000 psi - 1200 psi.",
+   "680 psi - 1460 psi."
+  ],
+  "reponse": "C",
+  "page": 69,
+  "image": null
+ }
+]
