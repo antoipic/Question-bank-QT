@@ -24,4 +24,4 @@ La progression (localStorage) n'est jamais effacée par une mise à jour.
 ## Déploiement
 
 Netlify (offre gratuite, repo privé) n'accepte que les commits signés par le propriétaire du repo :
-les commits doivent avoir pour auteur `antoipic`.
+les commits doivent avoir pour auteur `antoipic` (sans co-auteur).
