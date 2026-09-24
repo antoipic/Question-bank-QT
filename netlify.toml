@@ -1,0 +1,14 @@
+# Static site, no build: only the app/ folder is published (the PDF and tools stay private).
+[build]
+  publish = "app"
+
+# Always revalidate so a new version shows up right away (progress is in localStorage, untouched)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
