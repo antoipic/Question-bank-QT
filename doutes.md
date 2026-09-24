@@ -16,16 +16,17 @@ Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (
 | 267 | 55 | **B** | B est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
 | 304 | 62 | **B** | B est entouré, mais le corrigé et la note donnent A. Réponse entourée retenue. |
 
-## 2. « ? » ou absence de cercle (4)
+## 2. « ? » ou absence de cercle (5)
 
 | Question | Page PDF | Réponse retenue | Détail |
 |---|---|---|---|
 | 10 | 9 | **B** | Pas de cercle : un « ? » et une flèche pointent vers B. Le corrigé (p.70) et la note donnent B. |
 | 16 | 10 | **D** | D est entouré mais l'annotateur a ajouté un « ? » dans la marge. Le corrigé donne aussi D. |
 | 82 | 22 | **D** | D est entouré mais un « ? » et une flèche sont dans la marge. Le corrigé donne aussi D. |
+| 127 | 30 | **B** | B entouré en vert, mais un « ? » bleu et la note « si on retrouve de la P° au centre » sont à côté de C. Le corrigé donne B. |
 | 334 | 66 | **D** | D est entouré en vert mais un « ? » est dans la marge. Le corrigé donne aussi D. |
 
-## 3. Deux cercles, bleu et vert (39) — vert retenu, identique au corrigé
+## 3. Deux cercles, bleu et vert (40) — vert retenu, identique au corrigé
 
 | Question | Page PDF | Réponse retenue | Détail |
 |---|---|---|---|
@@ -58,6 +59,7 @@ Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (
 | 285 | 58 | **D** | Deux cercles : B en bleu, D en vert (correction). Corrigé : D, note : D. Vert retenu. |
 | 289 | 59 | **D** | Deux cercles : B en bleu, D en vert (correction). Corrigé : D, note : D. Vert retenu. |
 | 290 | 59 | **B** | Deux cercles : C en bleu, B en vert (correction). Corrigé : B, note : B. Vert retenu. |
+| 291 | 59 | **C** | C entouré en vert, petit gribouillis bleu sur B (pas un vrai cercle). Le corrigé donne C. |
 | 292 | 59 | **A** | Deux cercles : C en bleu, A en vert (correction). Corrigé : A, note : A. Vert retenu. |
 | 296 | 60 | **B** | Deux cercles : A en bleu, B en vert (correction). Corrigé : B, note : B. Vert retenu. |
 | 297 | 60 | **A** | Deux cercles : C en bleu, A en vert (correction). Corrigé : A, note : A. Vert retenu. |
