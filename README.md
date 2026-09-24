@@ -20,3 +20,8 @@ puis ouvrir http://localhost:8000
 
 Modifier les fichiers dans `app/`, puis commit et push sur `main` : Netlify redéploie.
 La progression (localStorage) n'est jamais effacée par une mise à jour.
+
+## Déploiement
+
+Netlify (offre gratuite, repo privé) n'accepte que les commits signés par le propriétaire du repo :
+les commits doivent avoir pour auteur `antoipic`.
