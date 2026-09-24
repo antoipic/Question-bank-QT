@@ -3,7 +3,7 @@
 Règle : la réponse entourée est retenue. Quand il y a deux cercles, le vert (correction) est retenu.
 Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (p. 80-99).
 
-## 1. Cercle différent du corrigé officiel (8) — à vérifier en priorité
+## 1. Cercle différent du corrigé officiel (7) — à vérifier en priorité
 
 | Question | Page PDF | Réponse retenue | Détail |
 |---|---|---|---|
@@ -11,7 +11,6 @@ Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (
 | 79 | 21 | **B** | B est entouré, mais le corrigé et la note donnent C. Réponse entourée retenue. |
 | 94 | 24 | **A** | A est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
 | 126 | 30 | **C** | C est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
-| 215 | 45 | **A** | Deux cercles : C en bleu, A en vert (correction). ⚠ Le corrigé et la note donnent C. Vert retenu. |
 | 216 | 45 | **C** | Deux cercles : B en bleu, C en vert (correction). ⚠ Le corrigé et la note donnent A. Vert retenu. |
 | 267 | 55 | **B** | B est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
 | 304 | 62 | **B** | B est entouré, mais le corrigé et la note donnent A. Réponse entourée retenue. |
@@ -25,7 +24,7 @@ Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (
 | 82 | 22 | **D** | D est entouré mais un « ? » et une flèche sont dans la marge. Le corrigé donne aussi D. |
 | 334 | 66 | **D** | D est entouré en vert mais un « ? » est dans la marge. Le corrigé donne aussi D. |
 
-## 3. Deux cercles, bleu et vert (39) — vert retenu, identique au corrigé
+## 3. Deux cercles, bleu et vert (40) — vert retenu, identique au corrigé
 
 | Question | Page PDF | Réponse retenue | Détail |
 |---|---|---|---|
@@ -37,6 +36,7 @@ Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (
 | 175 | 38 | **C** | Deux cercles : B en bleu, C en vert (correction). Corrigé : C, note : C. Vert retenu. |
 | 182 | 39 | **C** | Deux cercles : A en bleu, C en vert (correction). Corrigé : C, note : C. Vert retenu. |
 | 189 | 40 | **C** | Deux cercles : B en bleu, C en vert (correction). Corrigé : C, note : C. Vert retenu. |
+| 215 | 45 | **C** | Deux cercles : C en bleu, A en vert. Le corrigé officiel et la note donnent C : C retenu. |
 | 233 | 48 | **A** | Deux cercles : B en bleu, A en vert (correction). Corrigé : A, note : A. Vert retenu. |
 | 236 | 49 | **C** | Deux cercles : D en bleu, C en vert (correction). Corrigé : C, note : C. Vert retenu. |
 | 238 | 49 | **A** | Deux cercles : C en bleu, A en vert (correction). Corrigé : A, note : A. Vert retenu. |

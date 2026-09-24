@@ -47,5 +47,9 @@
  },
  "334": {
   "doute": "D est entouré en vert mais un « ? » est dans la marge. Le corrigé donne aussi D."
+ },
+ "215": {
+  "reponse": "C",
+  "doute": "Deux cercles : C en bleu, A en vert. Le corrigé officiel et la note donnent C : C retenu."
  }
 }
