@@ -1,13 +1,16 @@
 'use strict';
 
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.2.0';
 const PROGRESS_KEY = 'qcm777-progress';
 const SESSION_KEY = 'qcm777-session';
 const LETTERS = ['A', 'B', 'C', 'D'];
+const PASS_RATE = 75;
+const MODE_LABEL = { new: 'Série', flag: 'Flaggées', retry: 'Fausses' };
 
 let QUESTIONS = [];
 let BY_ID = {};
-let progress = { v: 1, done: {}, flags: {} };
+let progress = { v: 1, done: {}, flags: {}, history: [] };
+let chosenCount = String(load('qcm777-count', '30'));
 let session = null;
 
 const app = document.getElementById('app');
@@ -106,19 +109,22 @@ function renderHome() {
     <div class="card">
       <h2 style="margin-top:0">Nouvelle série</h2>
       <p class="muted" style="margin-top:0">Questions tirées au hasard parmi les ${rest} jamais faites.</p>
+      <p class="muted" style="margin:0 0 8px">Nombre de questions :</p>
       <div class="row counts">
-        ${[30, 50, 100].map(n => `<button data-act="new" data-n="${n}" ${rest ? '' : 'disabled'}>${n}</button>`).join('')}
+        ${['30', '50', '100', 'perso'].map(n => `<button class="chip ${chosenCount === n ? 'on' : ''}" data-act="count" data-n="${n}" ${rest ? '' : 'disabled'}>${n === 'perso' ? 'Perso' : n}</button>`).join('')}
       </div>
-      <form class="custom" data-act="custom">
-        <input type="number" inputmode="numeric" min="1" max="${Math.max(rest, 1)}" placeholder="Personnalisé" id="customN">
-        <button class="primary" type="submit" ${rest ? '' : 'disabled'}>Go</button>
-      </form>
+      <div class="custom" id="customBox" ${chosenCount === 'perso' ? '' : 'hidden'}>
+        <input type="number" inputmode="numeric" min="1" max="${Math.max(rest, 1)}" placeholder="Nombre (1 à ${rest})" id="customN">
+      </div>
+      <button class="primary" style="width:100%;margin-top:12px" data-act="start" ${rest ? '' : 'disabled'}>Commencer la série</button>
       ${rest ? '' : '<p class="muted">Banque épuisée. Fais un Reset pour recommencer.</p>'}
     </div>
 
     <div class="card">
       <button class="grow" style="width:100%" data-act="flagged" ${flags ? '' : 'disabled'}>🚩 Série questions flaggées (${flags})</button>
     </div>
+
+    ${renderHistory()}
 
     <div class="card">
       <h2 style="margin-top:0">Progression</h2>
@@ -131,6 +137,29 @@ function renderHome() {
     </div>
     <p class="footer">Version ${APP_VERSION} · ${total} questions</p>
   `;
+}
+
+function pctClass(p) { return p >= PASS_RATE ? 'pass' : 'fail'; }
+
+function renderHistory() {
+  const h = progress.history || [];
+  if (!h.length) return '';
+  const rows = h.slice().reverse().slice(0, 30).map(e => {
+    const p = Math.round(e.good / e.n * 100);
+    const d = new Date(e.date);
+    const date = d.toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit' }) + ' ' +
+      d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+    return `<li><span class="muted">${date}</span><span>${MODE_LABEL[e.mode] || ''} · ${e.good}/${e.n}</span><b class="${pctClass(p)}">${p} %</b></li>`;
+  }).join('');
+  const all = h.filter(e => e.mode !== 'retry');
+  const avg = all.length ? Math.round(all.reduce((a, e) => a + e.good / e.n, 0) / all.length * 100) : null;
+  return `
+    <div class="card">
+      <h2 style="margin-top:0">Historique</h2>
+      ${avg !== null ? `<p class="muted" style="margin-top:0">Moyenne (hors « fausses ») : <b class="${pctClass(avg)}">${avg} %</b> · objectif ${PASS_RATE} %</p>` : ''}
+      <ul class="history">${rows}</ul>
+      <button class="linkish" data-act="clearhist">Effacer l'historique</button>
+    </div>`;
 }
 
 function renderQuiz() {
@@ -181,11 +210,18 @@ function renderEnd() {
   const wrong = s.ids.filter(id => s.answers[id] !== BY_ID[id].reponse);
   const good = s.ids.length - wrong.length;
   const pct = Math.round(good / s.ids.length * 100);
+  if (!s.logged) {
+    progress.history = progress.history || [];
+    progress.history.push({ date: new Date().toISOString(), mode: s.mode, n: s.ids.length, good });
+    s.logged = true;
+    saveProgress();
+  }
   app.innerHTML = `
     <h1>Fin de série</h1>
-    <div class="card">
-      <div class="score">${good} / ${s.ids.length}</div>
-      <p style="text-align:center;margin:0" class="muted">${pct} % de bonnes réponses</p>
+    <div class="card" style="text-align:center">
+      <div class="bigpct ${pctClass(pct)}">${pct} %</div>
+      <p class="verdict ${pctClass(pct)}">${pct >= PASS_RATE ? '✓ Réussi' : '✗ Échoué'} <span class="muted">(seuil ${PASS_RATE} %)</span></p>
+      <p class="muted" style="margin:0">${good} réussies · ${wrong.length} ratées · sur ${s.ids.length}</p>
     </div>
     <div class="row" style="margin-bottom:14px">
       ${wrong.length
@@ -216,7 +252,19 @@ app.addEventListener('click', e => {
   if (!el || el.tagName === 'FORM') return;
   const act = el.dataset.act;
   switch (act) {
-    case 'new': startNew(el.dataset.n); break;
+    case 'count':
+      chosenCount = el.dataset.n;
+      save('qcm777-count', chosenCount);
+      app.querySelectorAll('[data-act=count]').forEach(b => b.classList.toggle('on', b === el));
+      document.getElementById('customBox').hidden = chosenCount !== 'perso';
+      if (chosenCount === 'perso') document.getElementById('customN').focus();
+      break;
+    case 'start':
+      startNew(chosenCount === 'perso' ? document.getElementById('customN').value : chosenCount);
+      break;
+    case 'clearhist':
+      if (confirm("Effacer l'historique des séries ?")) { progress.history = []; saveProgress(); renderHome(); }
+      break;
     case 'flagged': startSeries('flag', shuffle(flaggedIds())); break;
     case 'resume': renderQuiz(); break;
     case 'drop': session = null; saveSession(); renderHome(); break;
@@ -260,8 +308,8 @@ app.addEventListener('click', e => {
     case 'export': exportProgress(); break;
     case 'import': document.getElementById('importFile').click(); break;
     case 'reset':
-      if (confirm('Tout remettre à zéro ?\nToutes les questions redeviennent neuves et les flags sont effacés.')) {
-        progress = { v: 1, done: {}, flags: {} };
+      if (confirm('Tout remettre à zéro ?\nToutes les questions redeviennent neuves et les flags sont effacés.\n(L\'historique des séries est conservé.)')) {
+        progress = { v: 1, done: {}, flags: {}, history: progress.history || [] };
         session = null;
         saveProgress();
         saveSession();
@@ -272,9 +320,8 @@ app.addEventListener('click', e => {
   }
 });
 
-app.addEventListener('submit', e => {
-  e.preventDefault();
-  startNew(document.getElementById('customN').value);
+app.addEventListener('keydown', e => {
+  if (e.target.id === 'customN' && e.key === 'Enter') startNew(e.target.value);
 });
 
 app.addEventListener('change', e => {
@@ -288,6 +335,7 @@ function exportProgress() {
     date: new Date().toISOString(),
     done: Object.keys(progress.done).map(Number),
     flags: Object.keys(progress.flags).map(Number),
+    history: progress.history || [],
   };
   const blob = new Blob([JSON.stringify(data, null, 1)], { type: 'application/json' });
   const name = `qcm777-progression-${data.date.slice(0, 10)}.json`;
@@ -312,7 +360,7 @@ function importProgress(file) {
       const data = JSON.parse(reader.result);
       if (data.app !== 'qcm777' || !Array.isArray(data.done) || !Array.isArray(data.flags)) throw new Error();
       if (!confirm(`Importer cette progression ?\n${data.done.length} faites, ${data.flags.length} flaggées.\nLa progression actuelle sera remplacée.`)) return;
-      progress = { v: 1, done: {}, flags: {} };
+      progress = { v: 1, done: {}, flags: {}, history: Array.isArray(data.history) ? data.history : [] };
       data.done.forEach(id => { if (BY_ID[id]) progress.done[id] = 1; });
       data.flags.forEach(id => { if (BY_ID[id]) progress.flags[id] = 1; });
       session = null;
@@ -331,6 +379,7 @@ function importProgress(file) {
 async function boot() {
   const stored = load(PROGRESS_KEY, null);
   if (stored && stored.done && stored.flags) progress = stored;
+  if (!Array.isArray(progress.history)) progress.history = [];
   session = load(SESSION_KEY, null);
   try {
     const res = await fetch('questions.json', { cache: 'no-cache' });
