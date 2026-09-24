@@ -1,0 +1,374 @@
+[
+ {
+  "id": 1,
+  "question": "How, are the busses powered if the right engine is started with APU powering the Left bus system and External Power powering the right bus system ?",
+  "choix": [
+   "External power continues to supply the right main bus.",
+   "The right engine generator automatically powers the right main bus.",
+   "The right engine generator automatically powers both main busses."
+  ],
+  "reponse": "B",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 2,
+  "question": "What powers the left main bus if the left engine is shut-down, the right engine generator is running the APU generator is not running ?",
+  "choix": [
+   "Secondary External Power supplies the left main bus.",
+   "The APU generator powers the left main bus.",
+   "The right engine generator powers the left main bus."
+  ],
+  "reponse": "C",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 3,
+  "question": "Which items below are de-powered if you position the Battery switch to OFF during power down ? GPU, APU, GTR already OFF.",
+  "choix": [
+   "The APU Battery and Hot Battery Bus.",
+   "The Engine Fire Extinguisher Bottles and APU Fire Extinguisher Bottles.",
+   "The Standby bus, Captain's displays, and Left AIMS."
+  ],
+  "reponse": "C",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 4,
+  "question": "How can you power the Ground Handling Bus before shutdown if no external power is available ?",
+  "choix": [
+   "Select the ground handling Bus ON.",
+   "The bus is powered as long as the Right Main Bus is powered.",
+   "Start the APU."
+  ],
+  "reponse": "C",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 5,
+  "question": "Which bus operates only on the ground ?",
+  "choix": [
+   "The Ground Service Bus.",
+   "The Ground Handling, Bus.",
+   "The Left Main AC Bus.",
+   "The Right Transfer Bus."
+  ],
+  "reponse": "B",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 6,
+  "question": "What provides DC power on this airplane ?",
+  "choix": [
+   "DC Generators.",
+   "Standby Inverters.",
+   "PMG back up generators.",
+   "Transformer Rectifier Units."
+  ],
+  "reponse": "D",
+  "page": 8,
+  "image": null
+ },
+ {
+  "id": 7,
+  "question": "What is the electrical configuration during Autoland ?",
+  "choix": [
+   "There is no change from normal.",
+   "The Left Transfer Bus isolates from the Right Main Bus.",
+   "The busses isolate to allow three independant sources to power the three AP.",
+   "The Left Transfer Bus isolates from the Right Transfer Bus."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 8,
+  "question": "What is the primary power source for Fly-by-Wire ?",
+  "choix": [
+   "Battery.",
+   "Main AC Busses.",
+   "Permanent Magnet Generators.",
+   "APU."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 9,
+  "question": "What is the secondary source of power for Fly-by-Wire if one or more PMG are unpowered ?",
+  "choix": [
+   "Hot Battery Bus.",
+   "Left Transfer Bus.",
+   "DC Busses.",
+   "Main AC Busses."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 10,
+  "question": "In first time what is the primary source of Standby Power if all normal sources fail ?",
+  "choix": [
+   "APU.",
+   "Main Battery.",
+   "Back-up generators.",
+   "RAT generator."
+  ],
+  "reponse": "B",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 11,
+  "question": "What is the source of Stand-by electrical power if the RAT sheds electrical power because of low hydraulic pressure ?",
+  "choix": [
+   "APU.",
+   "Back-up generators.",
+   "Main Battery.",
+   "DC Busses."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 12,
+  "question": "What does the \" ELEC GEN DRIVE R \" advisory message indicate ?",
+  "choix": [
+   "The drive has disconnected automatically because of high oil temperature.",
+   "The drive has disconnected automatically because of low oil pressure.",
+   "There is low oil pressure in the drive. Disconnect the drive manually.",
+   "There is high oil temperature in the drive. Disconnect the drive manually."
+  ],
+  "reponse": "C",
+  "page": 9,
+  "image": null
+ },
+ {
+  "id": 13,
+  "question": "What is the primary source for the Transfer busses ?",
+  "choix": [
+   "Ram Air turbine.",
+   "Back-up generators.",
+   "Engine generators.",
+   "Main DC Busses."
+  ],
+  "reponse": "C",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 14,
+  "question": "What is the correct Electrical Panel configuration for normal flight ?",
+  "choix": [
+   "Bus Tie Switches in ISLN, Battery Switch ON, Generator Control Switches ON.",
+   "Bus Tie Switches in AUTO, Battery Switch OFF, Generator Control Switches ON.",
+   "Bus Tie Switches in AUTO, Battery Switch ON, Generator Control Switches ON.",
+   "Bus Tie Switches in AUTO, Battery Switch ON, Generator Control Switches OFF."
+  ],
+  "reponse": "C",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 15,
+  "question": "What does the External Power AVAIL light indicate ?",
+  "choix": [
+   "External power is disconnected from the airplane.",
+   "External power is connected to all the airplane's electrical busses.",
+   "External power is available to the electrical busses but may not be correct.",
+   "External Power is connected to the airplane, correct and ready to power the electrical busses."
+  ],
+  "reponse": "D",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 16,
+  "question": "One back up generators is automatically connected when :",
+  "choix": [
+   "Autoland.",
+   "Only one IDG operating (including APU).",
+   "1 or 2 AC Main Bus lost.",
+   "All answers are true."
+  ],
+  "reponse": "D",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 17,
+  "question": "What automatic switching will occur if you start the APU with External Power on the Tie Bus system ?",
+  "choix": [
+   "The APU connects to the Bus Tie switches but does not power either Main Bus.",
+   "The APU connects to the Tie Bus and replaces Secondary External Power on the Left Main Bus.",
+   "The APU connects to the Tie Bus and replaces Primary External Power."
+  ],
+  "reponse": "B",
+  "page": 10,
+  "image": null
+ },
+ {
+  "id": 18,
+  "question": "What does the \" APU SHUTDOWN \" advisory message mean ?",
+  "choix": [
+   "The APU is out of fuel.",
+   "The APU has been manually shut down.",
+   "The APU has automatically shut down.",
+   "The APU controller has shut down the packs."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 19,
+  "question": "What does the \" APU LIMIT \" caution message mean ?",
+  "choix": [
+   "The APU is out of fuel.",
+   "An APU limit has been exceeded.",
+   "The APU has automatically shut down.",
+   "The APU pneumatic output is limited."
+  ],
+  "reponse": "B",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 20,
+  "question": "What thrust reference mode provides maximum rated take-off thrust ?",
+  "choix": [
+   "TOI.",
+   "D -TO 1.",
+   "TO.",
+   "D -TO."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 21,
+  "question": "What thrust reference mode provides an assumed temperature derated take-off thrust ?",
+  "choix": [
+   "TOI.",
+   "D -TO.",
+   "TO.",
+   "D -TO 1."
+  ],
+  "reponse": "B",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 22,
+  "question": "During climb with normal engine EEC modes configured you can manually position the Thrust Levers to the full forward position. What will happen ?",
+  "choix": [
+   "The engines will exceed the maximum thrust limit.",
+   "The engines will produce maximum climb thrust.",
+   "The engines will produce maximum rated thrust.",
+   "The EEC alternate mode will automatically engage."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 23,
+  "question": "During, cruise with normal engine EEC modes configured, you manually set the Thrust Levers to the full forward position. What will happen ?",
+  "choix": [
+   "The engines will exceed the maximum thrust limit.",
+   "The engines will produce maximum cruise thrust.",
+   "The engines will produce maximum rated thrust.",
+   "The EEC alternate mode will automatically engage."
+  ],
+  "reponse": "C",
+  "page": 11,
+  "image": null
+ },
+ {
+  "id": 24,
+  "question": "Which statement is true concerning the alternate EEC mode ?",
+  "choix": [
+   "If a fault occurs in the normal mode, control is automatically transferred to the soft alternate mode.",
+   "In the hard alternate mode, the EEC uses N2 as the controlling parameter.",
+   "Engine thrust limit protection is provided in both the normal and hard alternate modes.",
+   "Overspeed protection is not available in the hard alternate mode."
+  ],
+  "reponse": "A",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 25,
+  "question": "With the ENGINE EEC's manually selected to alternate, what statement is true ?",
+  "choix": [
+   "The autothrottles automatically disengage.",
+   "Positioning the thrust levers to the full forward position will cause an engine limit to be exceeded.",
+   "Both engine EEC's are now in the soft alternate mode.",
+   "The EEC schedules N2 as a function of thrust lever position."
+  ],
+  "reponse": "B",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 26,
+  "question": "What does the \" ENG OIL PRESS R \" caution message mean ?",
+  "choix": [
+   "Engine oil pressure is low.",
+   "Engine oil pressure is high.",
+   "Engine oil temperature is low.",
+   "Engine oil temperature is high."
+  ],
+  "reponse": "A",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 27,
+  "question": "What does the \" ENG OIL TEMP L \" advisory message mean ?",
+  "choix": [
+   "Engine oil pressure is low.",
+   "Engine oil pressure is high.",
+   "Engine oil temperature is low.",
+   "Engine oil temperature is high."
+  ],
+  "reponse": "D",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 28,
+  "question": "What does the \" ENG FUEL VALVE L \" advisory message mean ?",
+  "choix": [
+   "The engine fuel valve on the left engine is closed.",
+   "The spar or engine fuel valve on the left engine has not reached it's commanded position.",
+   "Both the spar and the engine fuel valves on the left engine are commanded to the same position.",
+   "The fuel/oil heat exchanger valve is not functioning."
+  ],
+  "reponse": "B",
+  "page": 12,
+  "image": null
+ },
+ {
+  "id": 29,
+  "question": "With Autostart ON, when do you move the FUEL CONTROL switch to RUN ?",
+  "choix": [
+   "After START has been selected on the START/IGNITION selector.",
+   "After reaching maximum motoring speed.",
+   "After the engine stabilizes at idle.",
+   "After 18% N2 has been reached."
+  ],
+  "reponse": "A",
+  "page": 12,
+  "image": null
+ }
+]
