@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.1.0';
 const PROGRESS_KEY = 'qcm777-progress';
 const SESSION_KEY = 'qcm777-session';
 const LETTERS = ['A', 'B', 'C', 'D'];

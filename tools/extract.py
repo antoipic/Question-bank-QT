@@ -139,10 +139,10 @@ def main(first, last):
                 others = ", ".join(l for l in ink if l != green[0])
                 auto_doute = (f"Deux cercles : {others} en bleu, {green[0]} en vert (correction). " +
                               (f"Corrigé : {k}, note : {n}. Vert retenu." if green[0] == k else
-                               f"⚠ Le corrigé et la note donnent {k}. Vert retenu."))
+                               f"⚠ Le corrigé et la note donnent {k}. Corrigé officiel retenu."))
             elif ink and reponse and reponse != k:
                 auto_doute = (f"{reponse} est entouré, mais le corrigé et la note donnent {k}. "
-                              f"Réponse entourée retenue.")
+                              f"Corrigé officiel retenu.")
             auto.pop(q["num"], None)
             if auto_doute:
                 auto[q["num"]] = auto_doute
@@ -150,7 +150,7 @@ def main(first, last):
                 "id": q["num"],
                 "question": q["question"],
                 "choix": q["choix"],
-                "reponse": reponse,
+                "reponse": k,  # official answer key always wins
                 "page": pno,
                 "image": existing.get(q["num"], {}).get("image"),
             }
@@ -165,7 +165,7 @@ def main(first, last):
     for sid, o in ov.items():
         q = existing.get(int(sid))
         if q:
-            for f in ("reponse", "question", "choix", "image"):
+            for f in ("question", "choix", "image"):
                 if f in o:
                     q[f] = o[f]
     data = sorted(existing.values(), key=lambda q: q["id"])
@@ -183,12 +183,12 @@ def main(first, last):
             groups[g].append(f"| {sid} | {q['page']} | **{q['reponse']}** | {d} |")
     head = ["| Question | Page PDF | Réponse retenue | Détail |", "|---|---|---|---|"]
     md = ["# Doutes", "",
-          "Règle : la réponse entourée est retenue. Quand il y a deux cercles, le vert (correction) est retenu.",
+          "Règle : la réponse retenue est toujours celle du corrigé officiel (p. 70-77).",
           "Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (p. 80-99).", "",
-          f"## 1. Cercle différent du corrigé officiel ({len(groups['conflit'])}) — à vérifier en priorité", ""]
+          f"## 1. Cercle différent du corrigé officiel ({len(groups['conflit'])}) — corrigé officiel retenu", ""]
     md += head + groups["conflit"]
     md += ["", f"## 2. « ? » ou absence de cercle ({len(groups['marque'])})", ""] + head + groups["marque"]
-    md += ["", f"## 3. Deux cercles, bleu et vert ({len(groups['vert'])}) — vert retenu, identique au corrigé", ""]
+    md += ["", f"## 3. Deux cercles, bleu et vert ({len(groups['vert'])}) — le vert est identique au corrigé", ""]
     md += head + groups["vert"]
     (ROOT / "doutes.md").write_text("\n".join(md) + "\n")
     missing = [q["id"] for q in data if not q["reponse"]]

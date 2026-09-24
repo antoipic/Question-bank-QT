@@ -1,20 +1,20 @@
 # Doutes
 
-Règle : la réponse entourée est retenue. Quand il y a deux cercles, le vert (correction) est retenu.
+Règle : la réponse retenue est toujours celle du corrigé officiel (p. 70-77).
 Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (p. 80-99).
 
-## 1. Cercle différent du corrigé officiel (8) — à vérifier en priorité
+## 1. Cercle différent du corrigé officiel (8) — corrigé officiel retenu
 
 | Question | Page PDF | Réponse retenue | Détail |
 |---|---|---|---|
-| 66 | 19 | **C** | C est entouré, mais le corrigé et la note donnent B. Réponse entourée retenue. |
-| 79 | 21 | **B** | B est entouré, mais le corrigé et la note donnent C. Réponse entourée retenue. |
-| 94 | 24 | **A** | A est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
-| 126 | 30 | **C** | C est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
-| 215 | 45 | **C** | ⚠ Deux cercles : C en bleu, A en vert. Le corrigé officiel et la note donnent C : C retenu. |
-| 216 | 45 | **C** | Deux cercles : B en bleu, C en vert (correction). ⚠ Le corrigé et la note donnent A. Vert retenu. |
-| 267 | 55 | **B** | B est entouré, mais le corrigé et la note donnent D. Réponse entourée retenue. |
-| 304 | 62 | **B** | B est entouré, mais le corrigé et la note donnent A. Réponse entourée retenue. |
+| 66 | 19 | **B** | C est entouré, mais le corrigé et la note donnent B. Corrigé officiel retenu. |
+| 79 | 21 | **C** | B est entouré, mais le corrigé et la note donnent C. Corrigé officiel retenu. |
+| 94 | 24 | **D** | A est entouré, mais le corrigé et la note donnent D. Corrigé officiel retenu. |
+| 126 | 30 | **D** | C est entouré, mais le corrigé et la note donnent D. Corrigé officiel retenu. |
+| 215 | 45 | **C** | ⚠ Deux cercles : C en bleu, A en vert. Le corrigé et la note donnent C. Corrigé officiel retenu. |
+| 216 | 45 | **A** | Deux cercles : B en bleu, C en vert (correction). ⚠ Le corrigé et la note donnent A. Corrigé officiel retenu. |
+| 267 | 55 | **D** | B est entouré, mais le corrigé et la note donnent D. Corrigé officiel retenu. |
+| 304 | 62 | **A** | B est entouré, mais le corrigé et la note donnent A. Corrigé officiel retenu. |
 
 ## 2. « ? » ou absence de cercle (5)
 
@@ -26,7 +26,7 @@ Chaque réponse a été comparée au corrigé officiel (p. 70-77) et aux notes (
 | 127 | 30 | **B** | B entouré en vert, mais un « ? » bleu et la note « si on retrouve de la P° au centre » sont à côté de C. Le corrigé donne B. |
 | 334 | 66 | **D** | D est entouré en vert mais un « ? » est dans la marge. Le corrigé donne aussi D. |
 
-## 3. Deux cercles, bleu et vert (40) — vert retenu, identique au corrigé
+## 3. Deux cercles, bleu et vert (40) — le vert est identique au corrigé
 
 | Question | Page PDF | Réponse retenue | Détail |
 |---|---|---|---|

@@ -828,7 +828,7 @@
    "Either Main tank quantity is less than 13 100 kg.",
    "EICAS message FUEL LOW CENTER is displayed."
   ],
-  "reponse": "C",
+  "reponse": "B",
   "page": 19,
   "image": null
  },
@@ -990,7 +990,7 @@
    "Elevator input is not required if the airplane is in a 30 degree bank.",
    "The Turn compensation switch is on the overhead panel."
   ],
-  "reponse": "B",
+  "reponse": "C",
   "page": 21,
   "image": null
  },
@@ -1184,7 +1184,7 @@
    "When thrust changes.",
    "B and C are correct."
   ],
-  "reponse": "A",
+  "reponse": "D",
   "page": 24,
   "image": null
  },
@@ -1578,7 +1578,7 @@
    "The normal landing gear indications are displayed on the EICAS.",
    "Landing gear may be retracted after alternate extension, if hydraulics is available."
   ],
-  "reponse": "C",
+  "reponse": "D",
   "page": 30,
   "image": null
  },
@@ -2734,7 +2734,7 @@
    "Controls 8 zones and uses 1 pair of recirculating fans.",
    "Controls 6 zones and uses 2 pairs of recirculating fans."
   ],
-  "reponse": "C",
+  "reponse": "A",
   "page": 45,
   "image": null
  },
@@ -3385,7 +3385,7 @@
    "The SAARU provides information to the standby flight instruments.",
    "The SAARU provides airspeed, attitude, altitude and vertical speed data and the SAARU provides information to the standby flight instruments."
   ],
-  "reponse": "B",
+  "reponse": "D",
   "page": 55,
   "image": null
  },
@@ -3860,7 +3860,7 @@
    "The Autothrottle engages in Thrust reference mode with Climb mode.",
    "The Autothrottle engages in Thrust reference mode for 2000 ft per minute climb."
   ],
-  "reponse": "B",
+  "reponse": "A",
   "page": 62,
   "image": null
  },
