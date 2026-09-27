@@ -118,3 +118,4 @@ button.danger { color: var(--ko); }
 .pools { display: flex; flex-direction: column; gap: 8px; }
 .pools button { display: flex; justify-content: space-between; align-items: center; font-weight: 600; }
 .pools button span { font-weight: 700; opacity: .8; }
+.paused { border: 2px solid var(--primary); }

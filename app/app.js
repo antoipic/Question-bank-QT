@@ -1,6 +1,6 @@
 'use strict';
 
-const APP_VERSION = '1.4.0';
+const APP_VERSION = '1.5.0';
 const PROGRESS_KEY = 'qcm777-progress';
 const SESSION_KEY = 'qcm777-session';
 const LETTERS = ['A', 'B', 'C', 'D'];
@@ -62,6 +62,8 @@ const remainingIds = () => QUESTIONS.filter(q => !progress.done[q.id]).map(q => 
 // ---------- series ----------
 function startSeries(mode, ids) {
   if (!ids.length) return;
+  if (session && !session.finished && session.i < session.ids.length && mode !== 'retry' &&
+      !confirm('Une série est en pause. La remplacer par une nouvelle ?')) return;
   session = { mode, ids, i: 0, answers: {}, sel: null, revealed: false };
   saveSession();
   renderQuiz();
@@ -95,6 +97,15 @@ function renderHome() {
 
   app.innerHTML = `
     <h1>QCM B777</h1>
+    ${canResume ? `
+    <div class="card paused">
+      <p style="margin:0 0 4px;font-weight:700">⏸ Série en pause · ${MODE_LABEL[session.mode] || ''}</p>
+      <p class="muted" style="margin:0 0 10px">Question ${session.i + 1} / ${session.ids.length} · ${Object.keys(session.answers).filter(id => session.answers[id] === BY_ID[id].reponse).length} bonnes sur ${Object.keys(session.answers).length}</p>
+      <div class="row">
+        <button class="primary grow" data-act="resume">Reprendre</button>
+        <button class="grow" data-act="drop">Abandonner</button>
+      </div>
+    </div>` : ''}
     <div class="card">
       <div class="stats">
         <div><b>${done}</b><span>faites</span></div>
@@ -104,14 +115,7 @@ function renderHome() {
       <div class="bar"><div style="width:${pct}%"></div></div>
     </div>
 
-    ${canResume ? `
-    <div class="card">
-      <p style="margin:0 0 10px">Série en cours : question ${session.i + 1} / ${session.ids.length}</p>
-      <div class="row">
-        <button class="primary grow" data-act="resume">Reprendre</button>
-        <button class="grow" data-act="drop">Abandonner</button>
-      </div>
-    </div>` : ''}
+
 
     <div class="card">
       <h2 style="margin-top:0">Nouvelle série</h2>
@@ -177,7 +181,7 @@ function renderQuiz() {
 
   app.innerHTML = `
     <div class="top">
-      <button data-act="home" aria-label="Accueil">✕</button>
+      <button data-act="home" aria-label="Quitter">⏸ Quitter</button>
       <span class="muted">${title} · ${s.i + 1} / ${s.ids.length}</span>
       <button class="flag ${flagged ? 'on' : ''}" data-act="flag" aria-label="Flagger">🚩</button>
     </div>
@@ -267,10 +271,15 @@ app.addEventListener('click', e => {
       if (confirm("Effacer l'historique des séries ?")) { progress.history = []; saveProgress(); renderHome(); }
       break;
     case 'resume': renderQuiz(); break;
-    case 'drop': session = null; saveSession(); renderHome(); break;
+    case 'drop':
+      if (confirm('Abandonner la série en pause ?\n(Les réponses déjà données restent comptées.)')) {
+        session = null; saveSession(); renderHome();
+      }
+      break;
     case 'home':
-      if (session && session.finished) { session = null; saveSession(); }
+      if (session && session.finished) { session = null; saveSession(); renderHome(); break; }
       renderHome();
+      if (session) toast('Série sauvegardée : reprends-la quand tu veux');
       break;
     case 'pick':
       if (session.revealed) return;
