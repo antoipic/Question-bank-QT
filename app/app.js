@@ -1,15 +1,15 @@
 'use strict';
 
-const APP_VERSION = '1.3.0';
+const APP_VERSION = '1.4.0';
 const PROGRESS_KEY = 'qcm777-progress';
 const SESSION_KEY = 'qcm777-session';
 const LETTERS = ['A', 'B', 'C', 'D'];
 const PASS_RATE = 75;
-const MODE_LABEL = { new: 'Série', flag: 'Flaggées', retry: 'Fausses' };
+const MODE_LABEL = { new: 'Nouvelles', wrong: 'Fausses', flag: 'Flaggées', retry: 'Refaire' };
 
 let QUESTIONS = [];
 let BY_ID = {};
-let progress = { v: 1, done: {}, flags: {}, history: [] };
+let progress = { v: 1, done: {}, flags: {}, wrong: {}, history: [] };
 let chosenCount = String(load('qcm777-count', '30'));
 let session = null;
 
@@ -56,6 +56,7 @@ function toast(msg) {
 }
 const doneCount = () => QUESTIONS.filter(q => progress.done[q.id]).length;
 const flaggedIds = () => QUESTIONS.filter(q => progress.flags[q.id]).map(q => q.id);
+const wrongIds = () => QUESTIONS.filter(q => progress.wrong[q.id]).map(q => q.id);
 const remainingIds = () => QUESTIONS.filter(q => !progress.done[q.id]).map(q => q.id);
 
 // ---------- series ----------
@@ -65,12 +66,17 @@ function startSeries(mode, ids) {
   saveSession();
   renderQuiz();
 }
-function startNew(n) {
-  n = Math.floor(Number(n));
-  if (!n || n < 1) { toast('Nombre invalide'); return; }
-  const rest = remainingIds();
-  if (!rest.length) { toast('Banque épuisée : fais un Reset pour recommencer'); return; }
-  startSeries('new', shuffle(rest).slice(0, n));
+function chosenN() {
+  const n = Math.floor(Number(chosenCount === 'perso' ? document.getElementById('customN').value : chosenCount));
+  return n >= 1 ? n : 0;
+}
+// pool: 'new' (never done), 'wrong' (answered wrong, not yet right), 'flag' (flagged)
+function startPool(pool) {
+  const n = chosenN();
+  if (!n) { toast('Choisis un nombre de questions'); return; }
+  const ids = { new: remainingIds, wrong: wrongIds, flag: flaggedIds }[pool]();
+  if (!ids.length) { toast('Aucune question dans cette liste'); return; }
+  startSeries(pool, shuffle(ids).slice(0, n));
 }
 
 // ---------- screens ----------
@@ -83,6 +89,7 @@ function renderHome() {
   const done = doneCount();
   const rest = total - done;
   const flags = flaggedIds().length;
+  const wrongs = wrongIds().length;
   const pct = total ? Math.round(done / total * 100) : 0;
   const canResume = session && session.i < session.ids.length;
 
@@ -108,20 +115,21 @@ function renderHome() {
 
     <div class="card">
       <h2 style="margin-top:0">Nouvelle série</h2>
-      <p class="muted" style="margin-top:0">Questions tirées au hasard parmi les ${rest} jamais faites.</p>
-      <p class="muted" style="margin:0 0 8px">Nombre de questions :</p>
+      <p class="muted" style="margin:0 0 8px">1. Nombre de questions (maximum) :</p>
       <div class="row counts">
-        ${['30', '50', '100', 'perso'].map(n => `<button class="chip ${chosenCount === n ? 'on' : ''}" data-act="count" data-n="${n}" ${rest ? '' : 'disabled'}>${n === 'perso' ? 'Perso' : n}</button>`).join('')}
+        ${['30', '50', '100', 'perso'].map(n => `<button class="chip ${chosenCount === n ? 'on' : ''}" data-act="count" data-n="${n}">${n === 'perso' ? 'Perso' : n}</button>`).join('')}
       </div>
       <div class="custom" id="customBox" ${chosenCount === 'perso' ? '' : 'hidden'}>
-        <input type="number" inputmode="numeric" min="1" max="${Math.max(rest, 1)}" placeholder="Nombre (1 à ${rest})" id="customN">
+        <input type="number" inputmode="numeric" min="1" placeholder="Nombre de questions" id="customN">
       </div>
-      <button class="primary" style="width:100%;margin-top:12px" data-act="start" ${rest ? '' : 'disabled'}>Commencer la série</button>
-      ${rest ? '' : '<p class="muted">Banque épuisée. Fais un Reset pour recommencer.</p>'}
-    </div>
-
-    <div class="card">
-      <button class="grow" style="width:100%" data-act="flagged" ${flags ? '' : 'disabled'}>🚩 Série questions flaggées (${flags})</button>
+      <p class="muted" style="margin:16px 0 8px">2. Questions à travailler :</p>
+      <div class="pools">
+        <button class="primary" data-act="pool" data-pool="new" ${rest ? '' : 'disabled'}>Nouvelles <span>${rest}</span></button>
+        <button data-act="pool" data-pool="wrong" ${wrongs ? '' : 'disabled'}>❌ Fausses <span>${wrongs}</span></button>
+        <button data-act="pool" data-pool="flag" ${flags ? '' : 'disabled'}>🚩 Flaggées <span>${flags}</span></button>
+      </div>
+      <p class="muted" style="margin:10px 0 0;font-size:.8rem">Une question fausse sort de la liste dès que tu la réussis. Une question sort des flaggées quand tu retires son 🚩.</p>
+      ${rest ? '' : '<p class="muted">Toutes les questions ont été faites. Reset pour recommencer.</p>'}
     </div>
 
     ${renderHistory()}
@@ -146,12 +154,12 @@ function renderHistory() {
       d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
     return `<li><span class="muted">${date}</span><span>${MODE_LABEL[e.mode] || ''} · ${e.good}/${e.n}</span><b class="${pctClass(p)}">${p} %</b></li>`;
   }).join('');
-  const all = h.filter(e => e.mode !== 'retry');
+  const all = h.filter(e => e.mode === 'new');
   const avg = all.length ? Math.round(all.reduce((a, e) => a + e.good / e.n, 0) / all.length * 100) : null;
   return `
     <div class="card">
       <h2 style="margin-top:0">Historique</h2>
-      ${avg !== null ? `<p class="muted" style="margin-top:0">Moyenne (hors « fausses ») : <b class="${pctClass(avg)}">${avg} %</b> · objectif ${PASS_RATE} %</p>` : ''}
+      ${avg !== null ? `<p class="muted" style="margin-top:0">Moyenne des séries « Nouvelles » : <b class="${pctClass(avg)}">${avg} %</b> · objectif ${PASS_RATE} %</p>` : ''}
       <ul class="history">${rows}</ul>
       <button class="linkish" data-act="clearhist">Effacer l'historique</button>
     </div>`;
@@ -163,7 +171,7 @@ function renderQuiz() {
   const q = BY_ID[s.ids[s.i]];
   if (!q) { session = null; saveSession(); renderHome(); return; }
   const last = s.i === s.ids.length - 1;
-  const title = { new: 'Série', flag: 'Flaggées', retry: 'Refaire les fausses' }[s.mode];
+  const title = { new: 'Nouvelles', wrong: 'Fausses', flag: 'Flaggées', retry: 'Refaire les fausses' }[s.mode];
   const flagged = !!progress.flags[q.id];
   const ok = s.revealed && s.sel === q.reponse;
 
@@ -189,7 +197,7 @@ function renderQuiz() {
             <span class="l">${L}.</span><span>${esc(c)}</span></button>`;
         }).join('')}
       </div>
-      ${s.revealed ? `<p class="feedback ${ok ? 'ok' : 'ko'}">${ok ? '✓ Correct' : `✗ Faux — bonne réponse : ${q.reponse}`}</p>` : ''}
+      ${s.revealed ? `<p class="feedback ${ok ? 'ok' : 'ko'}">${ok ? (s.mode === 'wrong' ? '✓ Correct — retirée des fausses' : '✓ Correct') : `✗ Faux — bonne réponse : ${q.reponse}`}</p>` : ''}
     </div>
     <div class="actions">
       ${s.revealed
@@ -254,13 +262,10 @@ app.addEventListener('click', e => {
       document.getElementById('customBox').hidden = chosenCount !== 'perso';
       if (chosenCount === 'perso') document.getElementById('customN').focus();
       break;
-    case 'start':
-      startNew(chosenCount === 'perso' ? document.getElementById('customN').value : chosenCount);
-      break;
+    case 'pool': startPool(el.dataset.pool); break;
     case 'clearhist':
       if (confirm("Effacer l'historique des séries ?")) { progress.history = []; saveProgress(); renderHome(); }
       break;
-    case 'flagged': startSeries('flag', shuffle(flaggedIds())); break;
     case 'resume': renderQuiz(); break;
     case 'drop': session = null; saveSession(); renderHome(); break;
     case 'home':
@@ -278,7 +283,10 @@ app.addEventListener('click', e => {
       const id = session.ids[session.i];
       session.answers[id] = session.sel;
       session.revealed = true;
-      if (session.mode !== 'retry') { progress.done[id] = 1; saveProgress(); }
+      progress.done[id] = 1;
+      if (session.sel === BY_ID[id].reponse) delete progress.wrong[id];
+      else progress.wrong[id] = 1;
+      saveProgress();
       saveSession();
       renderQuiz();
       break;
@@ -301,8 +309,8 @@ app.addEventListener('click', e => {
     }
     case 'retry': startSeries('retry', shuffle(session.wrong)); break;
     case 'reset':
-      if (confirm('Tout remettre à zéro ?\nToutes les questions redeviennent neuves et les flags sont effacés.\n(L\'historique des séries est conservé.)')) {
-        progress = { v: 1, done: {}, flags: {}, history: progress.history || [] };
+      if (confirm('Tout remettre à zéro ?\nToutes les questions redeviennent neuves, les listes Fausses et Flaggées sont vidées.\n(L\'historique des séries est conservé.)')) {
+        progress = { v: 1, done: {}, flags: {}, wrong: {}, history: progress.history || [] };
         session = null;
         saveProgress();
         saveSession();
@@ -314,7 +322,7 @@ app.addEventListener('click', e => {
 });
 
 app.addEventListener('keydown', e => {
-  if (e.target.id === 'customN' && e.key === 'Enter') startNew(e.target.value);
+  if (e.target.id === 'customN' && e.key === 'Enter') e.target.blur();
 });
 
 
@@ -323,6 +331,7 @@ async function boot() {
   const stored = load(PROGRESS_KEY, null);
   if (stored && stored.done && stored.flags) progress = stored;
   if (!Array.isArray(progress.history)) progress.history = [];
+  if (!progress.wrong) progress.wrong = {};
   session = load(SESSION_KEY, null);
   try {
     const res = await fetch('questions.json', { cache: 'no-cache' });
